@@ -1,6 +1,6 @@
 # WMZTags
 # 功能齐全采用链式编程
-看下效果图
+# 看下效果图
 ![Untitled.gif](https://upload-images.jianshu.io/upload_images/9163368-cd494a9b677ea592.gif?imageMogr2/auto-orient/strip)
 
 使用说明（简单使用,支持frame布局和masonry布局）
@@ -35,36 +35,36 @@
 ##实际使用
 ```
      TagParam()
-    .imageNameSet(@"notCheck")                                                           //未选择的图片
+    .imageNameSet(@"notCheck")                                                         //未选择的图片
     .selectImageNameSet(@"check")                                                      //选择的图片
-    .wHitSet(YES)                                                                                        //开启边框描边
-    .wRadiusSet(10)                                                                                    //圆角
-    .wBoderWidthSet(1)                                                                             //边框宽度
-    .wBoderColorSet([UIColor cyanColor])                                             //边框颜色
-    .textImageNameSet(@"🐶")                                                               //未选择的文字图片（优先级高于纯图片）
-    .selecTextImageNameSet(@"🐱")                                                     //选择的文字图片
-    .wSelectMoreSet(YES)                                                                         //开启多选
-    .wInsertaBleSet(YES)                                                                            //开启新增标签
-    .wSelectOneSet(YES)                                                                            //开启单选
-    .wClosableSet(YES)                                                                               //开启关闭
-    .wLineaBleSet(YES)                                                                              //开启标签换行
-    .wLineNumSet(0)                                                                                 //设置标签最大行数
-    .wTypeSet(danger)                                                                              //设置主题
-    .wSizeSet(small)                                                                                 //设置标签大小
-    .imagePositionSet(TagImagePositionLeft)                                        //设置图文的位置
-    .wBackGroundColorSet([WMZTool stringTOColor:@"#999999"])//设置整个的背景颜色
-    .wSelectBoderColorSet([UIColor redColor])                                     //设置标签选中时的边框颜色
-    .wSelectInnerColorSet([UIColor redColor])                                       //设置标签选中时的标签的背景颜色                                    
-    .wSelectColorSet([UIColor redColor])                                                 //设置标签选中时的文字颜色
-    .marginTopSet(10)                                                                                 //外上边距
-    .marginBottomSet(10)                                                                           //外下边距
-    .marginLeftSet(10)                                                                                //外左边距
-    .marginRightSet(10)                                                                             //外右边距
-    .paddingTopSet(20)                                                                              //内上边距
-    .paddingLeftSet(20)                                                                              //内左边距
-    .btnTopSet(30)                                                                                      //标签的左边距
-    .btnLeftSet(30)                                                                                      //标签的上边距
-    .btnPaddingLeftSet(5)                                                                           //标签图文的间距
+    .wHitSet(YES)                                                                      //开启边框描边
+    .wRadiusSet(10)                                                                    //圆角
+    .wBoderWidthSet(1)                                                                 //边框宽度
+    .wBoderColorSet([UIColor cyanColor])                                               //边框颜色
+    .textImageNameSet(@"🐶")                                                           //未选择的文字图片（优先级高于纯图片）
+    .selecTextImageNameSet(@"🐱")                                                      //选择的文字图片
+    .wSelectMoreSet(YES)                                                               //开启多选
+    .wInsertaBleSet(YES)                                                               //开启新增标签
+    .wSelectOneSet(YES)                                                                //开启单选
+    .wClosableSet(YES)                                                                 //开启关闭
+    .wLineaBleSet(YES)                                                                 //开启标签换行
+    .wLineNumSet(0)                                                                    //设置标签最大行数
+    .wTypeSet(danger)                                                                  //设置主题
+    .wSizeSet(small)                                                                   //设置标签大小
+    .imagePositionSet(TagImagePositionLeft)                                            //设置图文的位置
+    .wBackGroundColorSet([WMZTool stringTOColor:@"#999999"])                           //设置整个的背景颜色
+    .wSelectBoderColorSet([UIColor redColor])                                          //设置标签选中时的边框颜色
+    .wSelectInnerColorSet([UIColor redColor])                                          //设置标签选中时的标签的背景颜色                                    
+    .wSelectColorSet([UIColor redColor])                                               //设置标签选中时的文字颜色
+    .marginTopSet(10)                                                                  //外上边距
+    .marginBottomSet(10)                                                               //外下边距
+    .marginLeftSet(10)                                                                 //外左边距
+    .marginRightSet(10)                                                                //外右边距
+    .paddingTopSet(20)                                                                 //内上边距
+    .paddingLeftSet(20)                                                                //内左边距
+    .btnTopSet(30)                                                                     //标签的左边距
+    .btnLeftSet(30)                                                                    //标签的上边距
+    .btnPaddingLeftSet(5)                                                              //标签图文的间距
     .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
         make.left.mas_equalTo(10);
         make.top.mas_equalTo(CGRectGetMaxY(tag1.frame)+30);
