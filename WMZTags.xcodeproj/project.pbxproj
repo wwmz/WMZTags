@@ -15,6 +15,27 @@
 		186244862296979E00584406 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244852296979E00584406 /* main.m */; };
 		186244902296979E00584406 /* WMZTagsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862448F2296979E00584406 /* WMZTagsTests.m */; };
 		1862449B2296979E00584406 /* WMZTagsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862449A2296979E00584406 /* WMZTagsUITests.m */; };
+		186244AB229697E600584406 /* WMZTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244AA229697E600584406 /* WMZTags.m */; };
+		186244AE22969DD500584406 /* WMZTagParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244AD22969DD500584406 /* WMZTagParam.m */; };
+		186244CF2297B90D00584406 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244B72297B90D00584406 /* MASCompositeConstraint.m */; };
+		186244D02297B90D00584406 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244BA2297B90D00584406 /* MASConstraint.m */; };
+		186244D12297B90D00584406 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244BC2297B90D00584406 /* MASConstraintMaker.m */; };
+		186244D22297B90D00584406 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244BE2297B90D00584406 /* MASLayoutConstraint.m */; };
+		186244D32297B90D00584406 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244C22297B90D00584406 /* MASViewAttribute.m */; };
+		186244D42297B90D00584406 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244C42297B90D00584406 /* MASViewConstraint.m */; };
+		186244D52297B90D00584406 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244C62297B90D00584406 /* NSArray+MASAdditions.m */; };
+		186244D62297B90D00584406 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244C92297B90D00584406 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		186244D72297B90D00584406 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244CB2297B90D00584406 /* View+MASAdditions.m */; };
+		186244D82297B90D00584406 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244CE2297B90D00584406 /* ViewController+MASAdditions.m */; };
+		186244DB2297BD4C00584406 /* WMZTagBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244DA2297BD4C00584406 /* WMZTagBtn.m */; };
+		186244DE2297E1CE00584406 /* WMZTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244DD2297E1CE00584406 /* WMZTagCell.m */; };
+		187C9E7F229BC89C000C7436 /* WMZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E7E229BC89C000C7436 /* WMZTool.m */; };
+		187C9E86229E75F6000C7436 /* tagOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E85229E75F6000C7436 /* tagOneCell.m */; };
+		187C9E89229E7605000C7436 /* tagTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E88229E7605000C7436 /* tagTwoCell.m */; };
+		187C9E8C229E760F000C7436 /* tagThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E8B229E760F000C7436 /* tagThreeCell.m */; };
+		187C9E8F229E761C000C7436 /* tagFourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E8E229E761C000C7436 /* tagFourCell.m */; };
+		187C9E92229E7627000C7436 /* tagFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E91229E7627000C7436 /* tagFiveCell.m */; };
+		187C9E95229E7645000C7436 /* tagUseTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E94229E7645000C7436 /* tagUseTableViewVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +72,53 @@
 		186244962296979E00584406 /* WMZTagsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMZTagsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1862449A2296979E00584406 /* WMZTagsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTagsUITests.m; sourceTree = "<group>"; };
 		1862449C2296979E00584406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186244A9229697E600584406 /* WMZTags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTags.h; sourceTree = "<group>"; };
+		186244AA229697E600584406 /* WMZTags.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTags.m; sourceTree = "<group>"; };
+		186244AC22969DD500584406 /* WMZTagParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTagParam.h; sourceTree = "<group>"; };
+		186244AD22969DD500584406 /* WMZTagParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTagParam.m; sourceTree = "<group>"; };
+		186244B62297B90D00584406 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		186244B72297B90D00584406 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		186244B82297B90D00584406 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		186244B92297B90D00584406 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		186244BA2297B90D00584406 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		186244BB2297B90D00584406 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		186244BC2297B90D00584406 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		186244BD2297B90D00584406 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		186244BE2297B90D00584406 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		186244BF2297B90D00584406 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		186244C02297B90D00584406 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		186244C12297B90D00584406 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		186244C22297B90D00584406 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		186244C32297B90D00584406 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		186244C42297B90D00584406 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		186244C52297B90D00584406 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		186244C62297B90D00584406 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		186244C72297B90D00584406 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		186244C82297B90D00584406 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		186244C92297B90D00584406 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		186244CA2297B90D00584406 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		186244CB2297B90D00584406 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		186244CC2297B90D00584406 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		186244CD2297B90D00584406 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		186244CE2297B90D00584406 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		186244D92297BD4C00584406 /* WMZTagBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTagBtn.h; sourceTree = "<group>"; };
+		186244DA2297BD4C00584406 /* WMZTagBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTagBtn.m; sourceTree = "<group>"; };
+		186244DC2297E1CE00584406 /* WMZTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTagCell.h; sourceTree = "<group>"; };
+		186244DD2297E1CE00584406 /* WMZTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTagCell.m; sourceTree = "<group>"; };
+		187C9E7D229BC89C000C7436 /* WMZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTool.h; sourceTree = "<group>"; };
+		187C9E7E229BC89C000C7436 /* WMZTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTool.m; sourceTree = "<group>"; };
+		187C9E84229E75F6000C7436 /* tagOneCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagOneCell.h; sourceTree = "<group>"; };
+		187C9E85229E75F6000C7436 /* tagOneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagOneCell.m; sourceTree = "<group>"; };
+		187C9E87229E7605000C7436 /* tagTwoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagTwoCell.h; sourceTree = "<group>"; };
+		187C9E88229E7605000C7436 /* tagTwoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagTwoCell.m; sourceTree = "<group>"; };
+		187C9E8A229E760F000C7436 /* tagThreeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagThreeCell.h; sourceTree = "<group>"; };
+		187C9E8B229E760F000C7436 /* tagThreeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagThreeCell.m; sourceTree = "<group>"; };
+		187C9E8D229E761C000C7436 /* tagFourCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagFourCell.h; sourceTree = "<group>"; };
+		187C9E8E229E761C000C7436 /* tagFourCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagFourCell.m; sourceTree = "<group>"; };
+		187C9E90229E7627000C7436 /* tagFiveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagFiveCell.h; sourceTree = "<group>"; };
+		187C9E91229E7627000C7436 /* tagFiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagFiveCell.m; sourceTree = "<group>"; };
+		187C9E93229E7645000C7436 /* tagUseTableViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagUseTableViewVC.h; sourceTree = "<group>"; };
+		187C9E94229E7645000C7436 /* tagUseTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagUseTableViewVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +169,29 @@
 		186244752296979600584406 /* WMZTags */ = {
 			isa = PBXGroup;
 			children = (
+				186244B52297B90D00584406 /* Masonry */,
+				186244A8229697B800584406 /* WMZTags */,
 				186244762296979600584406 /* AppDelegate.h */,
 				186244772296979600584406 /* AppDelegate.m */,
 				186244792296979600584406 /* ViewController.h */,
 				1862447A2296979600584406 /* ViewController.m */,
+				187C9E93229E7645000C7436 /* tagUseTableViewVC.h */,
+				187C9E94229E7645000C7436 /* tagUseTableViewVC.m */,
 				1862447C2296979600584406 /* Main.storyboard */,
 				1862447F2296979E00584406 /* Assets.xcassets */,
 				186244812296979E00584406 /* LaunchScreen.storyboard */,
 				186244842296979E00584406 /* Info.plist */,
 				186244852296979E00584406 /* main.m */,
+				187C9E84229E75F6000C7436 /* tagOneCell.h */,
+				187C9E85229E75F6000C7436 /* tagOneCell.m */,
+				187C9E87229E7605000C7436 /* tagTwoCell.h */,
+				187C9E88229E7605000C7436 /* tagTwoCell.m */,
+				187C9E8A229E760F000C7436 /* tagThreeCell.h */,
+				187C9E8B229E760F000C7436 /* tagThreeCell.m */,
+				187C9E8D229E761C000C7436 /* tagFourCell.h */,
+				187C9E8E229E761C000C7436 /* tagFourCell.m */,
+				187C9E90229E7627000C7436 /* tagFiveCell.h */,
+				187C9E91229E7627000C7436 /* tagFiveCell.m */,
 			);
 			path = WMZTags;
 			sourceTree = "<group>";
@@ -130,6 +212,55 @@
 				1862449C2296979E00584406 /* Info.plist */,
 			);
 			path = WMZTagsUITests;
+			sourceTree = "<group>";
+		};
+		186244A8229697B800584406 /* WMZTags */ = {
+			isa = PBXGroup;
+			children = (
+				186244A9229697E600584406 /* WMZTags.h */,
+				186244AA229697E600584406 /* WMZTags.m */,
+				186244DC2297E1CE00584406 /* WMZTagCell.h */,
+				186244DD2297E1CE00584406 /* WMZTagCell.m */,
+				186244AC22969DD500584406 /* WMZTagParam.h */,
+				186244AD22969DD500584406 /* WMZTagParam.m */,
+				186244D92297BD4C00584406 /* WMZTagBtn.h */,
+				186244DA2297BD4C00584406 /* WMZTagBtn.m */,
+				187C9E7D229BC89C000C7436 /* WMZTool.h */,
+				187C9E7E229BC89C000C7436 /* WMZTool.m */,
+			);
+			path = WMZTags;
+			sourceTree = "<group>";
+		};
+		186244B52297B90D00584406 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				186244B62297B90D00584406 /* MASCompositeConstraint.h */,
+				186244B72297B90D00584406 /* MASCompositeConstraint.m */,
+				186244B82297B90D00584406 /* MASConstraint+Private.h */,
+				186244B92297B90D00584406 /* MASConstraint.h */,
+				186244BA2297B90D00584406 /* MASConstraint.m */,
+				186244BB2297B90D00584406 /* MASConstraintMaker.h */,
+				186244BC2297B90D00584406 /* MASConstraintMaker.m */,
+				186244BD2297B90D00584406 /* MASLayoutConstraint.h */,
+				186244BE2297B90D00584406 /* MASLayoutConstraint.m */,
+				186244BF2297B90D00584406 /* Masonry.h */,
+				186244C02297B90D00584406 /* MASUtilities.h */,
+				186244C12297B90D00584406 /* MASViewAttribute.h */,
+				186244C22297B90D00584406 /* MASViewAttribute.m */,
+				186244C32297B90D00584406 /* MASViewConstraint.h */,
+				186244C42297B90D00584406 /* MASViewConstraint.m */,
+				186244C52297B90D00584406 /* NSArray+MASAdditions.h */,
+				186244C62297B90D00584406 /* NSArray+MASAdditions.m */,
+				186244C72297B90D00584406 /* NSArray+MASShorthandAdditions.h */,
+				186244C82297B90D00584406 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				186244C92297B90D00584406 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				186244CA2297B90D00584406 /* View+MASAdditions.h */,
+				186244CB2297B90D00584406 /* View+MASAdditions.m */,
+				186244CC2297B90D00584406 /* View+MASShorthandAdditions.h */,
+				186244CD2297B90D00584406 /* ViewController+MASAdditions.h */,
+				186244CE2297B90D00584406 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +393,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187C9E92229E7627000C7436 /* tagFiveCell.m in Sources */,
+				187C9E7F229BC89C000C7436 /* WMZTool.m in Sources */,
+				186244D02297B90D00584406 /* MASConstraint.m in Sources */,
+				187C9E95229E7645000C7436 /* tagUseTableViewVC.m in Sources */,
+				186244D32297B90D00584406 /* MASViewAttribute.m in Sources */,
+				186244D82297B90D00584406 /* ViewController+MASAdditions.m in Sources */,
+				186244D52297B90D00584406 /* NSArray+MASAdditions.m in Sources */,
+				187C9E89229E7605000C7436 /* tagTwoCell.m in Sources */,
 				1862447B2296979600584406 /* ViewController.m in Sources */,
+				186244D42297B90D00584406 /* MASViewConstraint.m in Sources */,
+				186244DE2297E1CE00584406 /* WMZTagCell.m in Sources */,
+				186244D22297B90D00584406 /* MASLayoutConstraint.m in Sources */,
+				187C9E8F229E761C000C7436 /* tagFourCell.m in Sources */,
+				186244AB229697E600584406 /* WMZTags.m in Sources */,
 				186244862296979E00584406 /* main.m in Sources */,
+				187C9E8C229E760F000C7436 /* tagThreeCell.m in Sources */,
+				186244D72297B90D00584406 /* View+MASAdditions.m in Sources */,
+				187C9E86229E75F6000C7436 /* tagOneCell.m in Sources */,
+				186244CF2297B90D00584406 /* MASCompositeConstraint.m in Sources */,
+				186244D62297B90D00584406 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				186244D12297B90D00584406 /* MASConstraintMaker.m in Sources */,
+				186244AE22969DD500584406 /* WMZTagParam.m in Sources */,
 				186244782296979600584406 /* AppDelegate.m in Sources */,
+				186244DB2297BD4C00584406 /* WMZTagBtn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +587,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HR6T4LQD9T;
 				INFOPLIST_FILE = WMZTags/Info.plist;
@@ -452,6 +605,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HR6T4LQD9T;
 				INFOPLIST_FILE = WMZTags/Info.plist;
