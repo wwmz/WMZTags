@@ -20,7 +20,7 @@
 
 - (void)setModel:(NSArray *)model{
     _model = model;
-    self.param.wInsertaBleSet(NO).wSelectOneSet(YES).wDataSet(model)
+    self.param.wInsertaBleSet(NO).wSelectOneSet(YES).wDataSet(model).wTagAlignSet(TagAlignRight)
     .wTapClick(^(NSInteger index, id  _Nonnull model, BOOL isSelected) {
         NSLog(@"单点的点击回调 %ld %@  %@",index,model,isSelected?@"选中":@"取消选中");
     })

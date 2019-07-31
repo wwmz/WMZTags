@@ -28,7 +28,7 @@
             [weakSelf.delegate updateCell:weakSelf data:modelArr];
         }
     })
-    .wInsertaBleSet(YES)
+    .wInsertaBleSet(YES).wTagAlignSet(TagAlignRight)
     .wHitSet(YES).wTypeSet(danger).wSizeSet(mini);
     [self updateInnerData:self.param];
     

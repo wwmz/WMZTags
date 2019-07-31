@@ -98,6 +98,13 @@ typedef enum :NSInteger{
     TagImagePositionBottom   = 3,            //图片在下，文字在上
 }TagImagePosition;
 
+
+typedef enum :NSInteger{
+    TagAlignLeft     = 0,            //左对齐
+    TagAlignRight    = 1,            //右对齐
+
+}TagAlign;
+
 @interface WMZTagParam : NSObject
 
 /* =========================================Attributes==========================================
@@ -111,6 +118,7 @@ typedef enum :NSInteger{
  wClosable           是否可删除        Boolean                     —                  false          否
  wSelectOne          是否可单选        Boolean                     —                  false          否
  wSelectMore         是否可多选        Boolean                     —                  false          否
+ wTagAlign           标签对齐模式       TagAlign       TagAlignLeft/TagAlignRight   TagAlignLeft     否
  wLineaBle           是否换行          Boolean                     —                  false          否
  wLineNum            换行最大行数       Boolean                    _                    0            否
  wHit                是否有边框描边     Boolean                     —                  false          否
@@ -150,6 +158,7 @@ WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wDisableTransitions)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wHit)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wLineaBle)
+WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, TagAlign,          wTagAlign)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, NSArray*,          wData)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           wBoderWidth)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           wRadius)

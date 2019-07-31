@@ -34,6 +34,7 @@
     .wParentViewSet(self.scrollView)
     .wFrameSet(CGRectMake(10, 10, 310, 0))
     .wClosableSet(YES)
+    .wTagAlignSet(TagAlignRight)
     ;
     WMZTags *tag1 = [[WMZTags alloc]initConfigureWithModel:model];
    

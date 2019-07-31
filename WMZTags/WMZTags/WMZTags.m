@@ -148,72 +148,63 @@
             
             if (add) {
                 [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-                    make.left.mas_equalTo(self.param.marginLeft);
+                    if (self.param.wTagAlign == TagAlignRight) {
+                        make.right.mas_equalTo(-self.param.marginLeft);
+                    }else{
+                        make.left.mas_equalTo(self.param.marginLeft);
+                    }
                     make.top.mas_equalTo(self.param.marginTop);
                     make.width.mas_equalTo(btnWidth);
                     make.height.mas_equalTo(btnHeight);
                 }];
             }else{
                 [btn mas_remakeConstraints:^(MASConstraintMaker *make) {
-                    make.left.mas_equalTo(self.param.marginLeft);
+                    if (self.param.wTagAlign == TagAlignRight) {
+                        make.right.mas_equalTo(-self.param.marginLeft);
+                    }else{
+                        make.left.mas_equalTo(self.param.marginLeft);
+                    }
                     make.top.mas_equalTo(self.param.marginTop);
                     make.width.mas_equalTo(btnWidth);
                     make.height.mas_equalTo(btnHeight);
                 }];
             }
         }else{
-            btn.frame = CGRectMake(self.param.marginLeft, self.param.marginTop, btnWidth, btnHeight);
+
+            btn.frame = CGRectMake(self.param.wTagAlign == TagAlignRight?(self.frame.size.width-self.param.marginLeft-btnWidth):self.param.marginLeft, self.param.marginTop, btnWidth, btnHeight);
         }
     }else{
         allWidth += (btnWidth + self.param.paddingLeft) ;
         if (allWidth > maxWidth) {
             if (self.param.wMasonry) {
-                if (add) {
-                    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+                [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+                    if (self.param.wTagAlign == TagAlignRight) {
+                        make.right.mas_equalTo(-self.param.marginLeft);
+                    }else{
                         make.left.mas_equalTo(self.param.marginLeft);
-                        make.top.equalTo(tempBtn.mas_bottom).offset(self.param.paddingTop);
-                        make.width.mas_equalTo(btnWidth);
-                        make.height.mas_equalTo(btnHeight);
-                    }];
-                }else{
-                    [btn mas_remakeConstraints:^(MASConstraintMaker *make) {
-                        make.left.mas_equalTo(self.param.marginLeft);
-                        make.top.equalTo(tempBtn.mas_bottom).offset(self.param.paddingTop);
-                        make.width.mas_equalTo(btnWidth);
-                        make.height.mas_equalTo(btnHeight);
-                    }];
-                }
-                
+                    }
+                    make.top.equalTo(tempBtn.mas_bottom).offset(self.param.paddingTop);
+                    make.width.mas_equalTo(btnWidth);
+                    make.height.mas_equalTo(btnHeight);
+                }];
             }else{
-                btn.frame = CGRectMake(self.param.marginLeft, CGRectGetMaxY(tempBtn.frame)+ self.param.paddingTop, btnWidth, btnHeight);
+                btn.frame = CGRectMake(self.param.wTagAlign == TagAlignRight?(self.frame.size.width-self.param.marginLeft-btnWidth):self.param.marginLeft, CGRectGetMaxY(tempBtn.frame)+ self.param.paddingTop, btnWidth, btnHeight);
             }
             allWidth = (btnWidth + self.param.marginLeft);
         }else{
             if (self.param.wMasonry) {
-                [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-                    make.left.equalTo(tempBtn.mas_right).offset(self.param.paddingLeft);
+                [btn mas_remakeConstraints:^(MASConstraintMaker *make) {
+                    if (self.param.wTagAlign == TagAlignRight) {
+                        make.right.equalTo(tempBtn.mas_left).offset(-self.param.paddingLeft);
+                    }else{
+                        make.left.equalTo(tempBtn.mas_right).offset(self.param.paddingLeft);
+                    }
                     make.top.equalTo(tempBtn.mas_top);
                     make.width.mas_equalTo(btnWidth);
                     make.height.mas_equalTo(btnHeight);
                 }];
-                
-                if (add) {
-                    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-                        make.left.equalTo(tempBtn.mas_right).offset(self.param.paddingLeft);
-                        make.top.equalTo(tempBtn.mas_top);
-                        make.width.mas_equalTo(btnWidth);
-                        make.height.mas_equalTo(btnHeight);
-                    }];
-                }else{
-                    [btn mas_remakeConstraints:^(MASConstraintMaker *make) {
-                        make.left.equalTo(tempBtn.mas_right).offset(self.param.paddingLeft);
-                        make.top.equalTo(tempBtn.mas_top);
-                        make.width.mas_equalTo(btnWidth);
-                        make.height.mas_equalTo(btnHeight);
-                    }];
-                }
             }else{
-                btn.frame = CGRectMake(CGRectGetMaxX(tempBtn.frame) +self.param.paddingLeft, tempBtn.frame.origin.y, btnWidth, btnHeight);
+                btn.frame = CGRectMake(self.param.wTagAlign == TagAlignRight?(CGRectGetMinX(tempBtn.frame) -self.param.paddingLeft-btnWidth):CGRectGetMaxX(tempBtn.frame) +self.param.paddingLeft, tempBtn.frame.origin.y, btnWidth, btnHeight);
             }
         }
     }
