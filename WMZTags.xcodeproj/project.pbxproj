@@ -36,6 +36,7 @@
 		187C9E8F229E761C000C7436 /* tagFourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E8E229E761C000C7436 /* tagFourCell.m */; };
 		187C9E92229E7627000C7436 /* tagFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E91229E7627000C7436 /* tagFiveCell.m */; };
 		187C9E95229E7645000C7436 /* tagUseTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E94229E7645000C7436 /* tagUseTableViewVC.m */; };
+		F363E8DD22F9CE3700568471 /* WMZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F363E8DC22F9CE3700568471 /* WMZTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		187C9E91229E7627000C7436 /* tagFiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagFiveCell.m; sourceTree = "<group>"; };
 		187C9E93229E7645000C7436 /* tagUseTableViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagUseTableViewVC.h; sourceTree = "<group>"; };
 		187C9E94229E7645000C7436 /* tagUseTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagUseTableViewVC.m; sourceTree = "<group>"; };
+		F363E8DB22F9CE3700568471 /* WMZTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTextView.h; sourceTree = "<group>"; };
+		F363E8DC22F9CE3700568471 /* WMZTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,8 @@
 				186244DA2297BD4C00584406 /* WMZTagBtn.m */,
 				187C9E7D229BC89C000C7436 /* WMZTool.h */,
 				187C9E7E229BC89C000C7436 /* WMZTool.m */,
+				F363E8DB22F9CE3700568471 /* WMZTextView.h */,
+				F363E8DC22F9CE3700568471 /* WMZTextView.m */,
 			);
 			path = WMZTags;
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 				187C9E8F229E761C000C7436 /* tagFourCell.m in Sources */,
 				186244AB229697E600584406 /* WMZTags.m in Sources */,
 				186244862296979E00584406 /* main.m in Sources */,
+				F363E8DD22F9CE3700568471 /* WMZTextView.m in Sources */,
 				187C9E8C229E760F000C7436 /* tagThreeCell.m in Sources */,
 				186244D72297B90D00584406 /* View+MASAdditions.m in Sources */,
 				187C9E86229E75F6000C7436 /* tagOneCell.m in Sources */,

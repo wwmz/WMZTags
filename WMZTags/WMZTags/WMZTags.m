@@ -28,9 +28,8 @@
 
 
 //更新
-- (void)updateUI{
-
-    if (self.tabelViewCell&&(self.param.wClosable||self.param.wInsertaBle)) {
+- (void)updateUI:(BOOL)shouldReset{
+    if ((self.tabelViewCell&&(self.param.wClosable||self.param.wInsertaBle))||shouldReset) {
         for (WMZTagBtn *btn in self.btnArr) {
             [btn removeFromSuperview];
         }
@@ -74,7 +73,7 @@
     if (!self.param.wData.count&&![self.param.wParentView isKindOfClass:[UITableViewCell class]]) {
         if (self.param.wMasonry) {
             [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.bottom.mas_equalTo(0);
+                make.height.mas_equalTo(0).priorityHigh();
             }];
             
         }else{
@@ -96,16 +95,19 @@
     float maxWidth = self.frame.size.width- margin > TagWitdh ? TagWitdh-self.frame.origin.x-margin:self.frame.size.width- margin;
     WMZTagBtn *tempBtn = nil;
     if (!self.btnArr.count) {
-
+    NSLog(@"%@",self.param.wData);
         for (int i = 0; i<self.param.wData.count; i++) {
+            
             BOOL insertType  = (i == self.param.wData.count-1 && self.param.wInsertaBle)?YES:NO;
             WMZTagBtn *btn = [WMZTagBtn buttonWithType:UIButtonTypeCustom WithParam:self.param withTag:i + 100  withText:self.param.wData[i] BtnType:insertType?BtnInsert:BtnNormal];
             [btn addTarget:self action:@selector(btnTagAction:) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:btn];
             [self setUpBtn:btn lastBtn:tempBtn  maxWidth:maxWidth  addBtnObj:YES isLast:i==self.param.wData.count-1];
             tempBtn = btn;
+            
         }
     }else{
+        
         for (int i = 0; i<self.btnArr.count; i++) {
             WMZTagBtn *btn = self.btnArr[i];
             [self setUpBtn:btn lastBtn:tempBtn  maxWidth:maxWidth  addBtnObj:NO isLast:i==self.btnArr.count-1];

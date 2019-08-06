@@ -26,6 +26,7 @@
     })
     .imageNameSet(@"notCheck").selectImageNameSet(@"check").wTypeSet(success) ;
     [self updateInnerData:self.param];
+    
 }
 - (void)awakeFromNib {
     [super awakeFromNib];
