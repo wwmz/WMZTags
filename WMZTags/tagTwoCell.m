@@ -20,7 +20,7 @@
 
 - (void)setModel:(NSArray *)model{
     _model = model;
-    self.param.wSelectMoreSet(YES).wDataSet(model).textImageNameSet(@"✔️").selecTextImageNameSet(@"❎")
+    self.param.wSelectMoreSet(YES).wDataSet(model).textImageNameSet(@"💖").selecTextImageNameSet(@"❤️")
     .imagePositionSet(TagImagePositionLeft).wTypeSet(info)
     .wMoreTapClick(^(NSArray * _Nonnull indexArr, NSArray * _Nonnull modelArr) {
         NSLog(@"多点的点击回调 %@ %@",indexArr,modelArr);

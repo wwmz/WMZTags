@@ -39,6 +39,7 @@
     UIBarButtonItem*item = [[UIBarButtonItem alloc]initWithCustomView:leftbutton];
     self.navigationItem.rightBarButtonItem = item;
     
+    self.modelArr = [self getData];
     self.tabelView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStyleGrouped];
     self.tabelView.delegate = self;
     self.tabelView.dataSource = self;
@@ -47,10 +48,6 @@
     self.tabelView.estimatedRowHeight = 100;
     [self.view addSubview:self.tabelView];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.modelArr = [self getData];
-        [self.tabelView reloadData];
-    });
 }
 
 //tag的代理方法
@@ -108,7 +105,7 @@
 - (NSArray *)cellNameArr{
     if (!_cellNameArr) {
         _cellNameArr = @[@"WMZTagCell",@"tagOneCell",@"tagTwoCell",@"tagThreeCell",@"tagFourCell",@"tagFiveCell"];
-//         _cellNameArr = @[@"WMZTagCell",@"WMZTagCell",@"WMZTagCell",@"WMZTagCell",@"WMZTagCell",@"WMZTagCell"];
+          _cellNameArr = @[@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell"];
     }
     return _cellNameArr;
 }

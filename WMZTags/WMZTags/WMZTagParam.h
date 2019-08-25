@@ -172,7 +172,6 @@ WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           wFont)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, NSInteger,         wLineNum)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, TagSizeType,       wSize)
-WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIView*,           wParentView)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGRect,            wFrame)
 WMZPropStatementAndPropSetFuncStatement(copy,   WMZTagParam, TagConstraint,     wMasonry)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           marginLeft)

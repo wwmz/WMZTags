@@ -8,7 +8,6 @@
 
 #import "WMZTagCell.h"
 #import "WMZTags.h"
-#import "WMZTextView.h"
 @interface WMZTagCell()
 //tag
 @property(nonatomic,strong)WMZTags *myTag;
@@ -21,12 +20,11 @@
         
         self.param =
         TagParam()
-        .wDataSet(@[@"1",@"2"])
+//        .wDataSet(@[@"1",@"2"])
         .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
             make.edges.mas_equalTo(0);
-        })
-        .wParentViewSet(self.contentView);
-        self.myTag = [[WMZTags alloc]initConfigureWithModel:_param];
+        });
+        self.myTag = [[WMZTags alloc]initConfigureWithModel:_param withView:self.contentView];
         
     }
     return self;
@@ -42,7 +40,7 @@
 
 - (void)updateInnerData:(WMZTagParam *)param{
 //    self.myTag.param = param;
-    [self.myTag updateUI:YES];
+    [self.myTag updateUI:NO];
 }
 
 

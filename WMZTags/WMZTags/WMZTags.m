@@ -17,10 +17,13 @@
 @end
 @implementation WMZTags
 
-- (instancetype)initConfigureWithModel:(WMZTagParam *)param{
+- (instancetype)initConfigureWithModel:(WMZTagParam *)param withView:(UIView*)parentView{
     if (self = [super init]) {
         self.param = param;
-        [self serUp];
+        if (parentView) {
+            [parentView addSubview:self];
+            [self serUp];
+        }
     }
     return self;
 }
@@ -40,9 +43,7 @@
 
 - (void)serUp{
     
-    if (!self.param.wParentView) return;
     self.userInteractionEnabled = YES;
-    [self.param.wParentView addSubview:self];
     self.param.wMasonry? [self mas_makeConstraints:self.param.wMasonry]:[self setFrame:self.param.wFrame];
     [self createUI];
     if (self.param.wBackGroundColor) self.backgroundColor = self.param.wBackGroundColor;
@@ -70,7 +71,7 @@
     }
 
     //没有数据
-    if (!self.param.wData.count&&![self.param.wParentView isKindOfClass:[UITableViewCell class]]) {
+    if (!self.param.wData.count&&![self.superview isKindOfClass:[UITableViewCell class]]) {
         if (self.param.wMasonry) {
             [self mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.height.mas_equalTo(0).priorityHigh();
@@ -85,7 +86,7 @@
 
 
     if (self.param.wMasonry) {
-        [self.param.wParentView layoutIfNeeded];
+        [self.superview layoutIfNeeded];
     }
     
     allWidth = 0;     //整体长度
@@ -95,7 +96,6 @@
     float maxWidth = self.frame.size.width- margin > TagWitdh ? TagWitdh-self.frame.origin.x-margin:self.frame.size.width- margin;
     WMZTagBtn *tempBtn = nil;
     if (!self.btnArr.count) {
-    NSLog(@"%@",self.param.wData);
         for (int i = 0; i<self.param.wData.count; i++) {
             
             BOOL insertType  = (i == self.param.wData.count-1 && self.param.wInsertaBle)?YES:NO;
@@ -158,7 +158,6 @@
                 make.height.mas_equalTo(btnHeight);
             }];
         }else{
-
             btn.frame = CGRectMake(self.param.wTagAlign == TagAlignRight?(self.frame.size.width-self.param.marginLeft-btnWidth):self.param.marginLeft, self.param.marginTop, btnWidth, btnHeight);
         }
     }else{
@@ -202,7 +201,6 @@
             //最后一个距离底部的距离
             [btn mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.bottom.mas_equalTo(-self.param.marginBottom).with.priorityHigh();
-                
             }];
         }else{
             CGRect rect  = self.frame;
@@ -210,11 +208,15 @@
             self.frame = rect;
         }
     }
-
+    
     //是否添加进按钮数组
     if (add) {
         [self.btnArr addObject:btn];
+        btn.selected = NO;
+    }else{
+        btn.selected = [btn isSelected];
     }
+
 }
 
 
@@ -225,9 +227,11 @@
     //添加的方法
     if (self.param.wInsertaBle && sender.type == BtnInsert) {
         //外界自定义
+        __weak __typeof(self)weakSelf = self;
         if (self.param.insertClick) {
             self.param.insertClick(index, self.param.wInsertPlaceholder, ^(NSString * _Nonnull text) {
-                [self addTag:text];
+                __strong typeof(self) strongself = weakSelf;
+                [strongself addTag:text];
             });
         }else{
             UIAlertController *alerVC = [UIAlertController alertControllerWithTitle:@"增加标签" message:nil preferredStyle:UIAlertControllerStyleAlert];
@@ -236,8 +240,9 @@
                 textField.text = [NSString stringWithFormat:@"%ld",self.param.wData.count];
             }];
             [alerVC addAction:[UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDestructive) handler:^(UIAlertAction * _Nonnull action) {
+                __strong typeof(self) strongself = weakSelf;
                 UITextField *textfield1 = alerVC.textFields[0];
-                [self addTag:textfield1.text];
+                [strongself addTag:textfield1.text];
             }]];
             [[WMZTool getCurrentVC] presentViewController:alerVC animated:YES completion:nil];
         }
@@ -321,7 +326,7 @@
 
 - (BOOL)tabelViewCell{
      _tabelViewCell = NO;
-    if ([NSStringFromClass([self.param.wParentView class]) isEqualToString:@"UITableViewCellContentView"]||[self.param.wParentView isKindOfClass:[UITableViewCell class]]) {
+    if ([NSStringFromClass([self.superview class]) isEqualToString:@"UITableViewCellContentView"]||[self.superview isKindOfClass:[UITableViewCell class]]) {
         _tabelViewCell = YES;
     }
     return _tabelViewCell;
@@ -334,6 +339,6 @@
     return _btnArr;
 }
 
-
 @end
+
 

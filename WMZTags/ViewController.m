@@ -31,19 +31,17 @@
     //frame使用
     WMZTagParam *model = TagParam()
     .wDataSet(@[@"frame布局",@"这是",@"一个具备",@"很多功能的标签",@"所有的功能都用链式编程",@"方便调用方便调用方便调用方便调用方便调用方便调用",@"欢迎下载使用欢迎下载使用欢迎下载使用欢迎下载使用欢迎下载使用",@"欢迎下载使用",@"感谢支持感谢支持感谢支持感谢支持感谢支持"])
-    .wParentViewSet(self.scrollView)
     .wFrameSet(CGRectMake(10, 10, 310, 0))
     .wClosableSet(YES)
     .wTagAlignSet(TagAlignRight)
     ;
-    WMZTags *tag1 = [[WMZTags alloc]initConfigureWithModel:model];
+    WMZTags *tag1 = [[WMZTags alloc]initConfigureWithModel:model  withView:self.scrollView];
    
     
 //  maronry使用
     WMZTagParam *model1 =
     TagParam()
     .wDataSet(@[@"标签一",@"标签二",@"标签三",@"标签四",@"标签五",@"标签六",@"标签七",@"标签八",@"标签九"])
-    .wParentViewSet(self.scrollView)
     .imageNameSet(@"notCheck")
     .selectImageNameSet(@"check")
     .wHitSet(YES)
@@ -103,10 +101,10 @@
             UITextField *textfield1 = alerVC.textFields[0];
             block(textfield1.text);
         }]];
-        [self presentViewController:alerVC animated:YES completion:nil];
+        [weakSelf presentViewController:alerVC animated:YES completion:nil];
     })
     ;
-    self.tag2 = [[WMZTags alloc]initConfigureWithModel:model1];
+    self.tag2 = [[WMZTags alloc]initConfigureWithModel:model1 withView:self.scrollView];
 
     [self update];
 
@@ -116,5 +114,6 @@
     [self.scrollView layoutIfNeeded];
     self.scrollView.contentSize = CGSizeMake(TagWitdh, CGRectGetMaxY(self.tag2.frame)+20);
 }
+
 
 @end

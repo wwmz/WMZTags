@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  调用方法
  *
  */
-- (instancetype)initConfigureWithModel:(WMZTagParam *)param;
+- (instancetype)initConfigureWithModel:(WMZTagParam *)param withView:(UIView*)parentView;
 
 /**
  *  更新方法
