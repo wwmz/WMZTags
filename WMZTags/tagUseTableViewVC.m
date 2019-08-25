@@ -105,7 +105,7 @@
 - (NSArray *)cellNameArr{
     if (!_cellNameArr) {
         _cellNameArr = @[@"WMZTagCell",@"tagOneCell",@"tagTwoCell",@"tagThreeCell",@"tagFourCell",@"tagFiveCell"];
-          _cellNameArr = @[@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell"];
+//          _cellNameArr = @[@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell"];
     }
     return _cellNameArr;
 }
