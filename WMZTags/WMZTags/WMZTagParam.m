@@ -32,10 +32,10 @@ WMZPropSetFuncImplementation(WMZTagParam, UIColor*,         wSelectInnerColor)
 WMZPropSetFuncImplementation(WMZTagParam, UIColor*,         wSelectColor)
 WMZPropSetFuncImplementation(WMZTagParam, UIColor* ,        wBackGroundColor)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat ,         wFont)
+WMZPropSetFuncImplementation(WMZTagParam, NSArray*,         wData)
 WMZPropSetFuncImplementation(WMZTagParam, TagSizeType ,     wSize)
 WMZPropSetFuncImplementation(WMZTagParam, CGRect,           wFrame)
 WMZPropSetFuncImplementation(WMZTagParam, TagConstraint,    wMasonry)
-WMZPropSetFuncImplementation(WMZTagParam, NSArray*,         wData)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat,          marginLeft)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat,          marginRight)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat,          marginTop)
@@ -78,7 +78,12 @@ WMZPropSetFuncImplementation(WMZTagParam, NSString*,        selectImageName)
     return self;
 }
 
-
+- (NSMutableArray *)selectBtnArr{
+    if (!_selectBtnArr) {
+        _selectBtnArr = [NSMutableArray new];
+    }
+    return _selectBtnArr;
+}
 
 WMZTagParam * TagParam(void){
     return  [WMZTagParam new];

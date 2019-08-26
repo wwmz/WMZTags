@@ -11,26 +11,34 @@
 //
 
 #import "tagFourCell.h"
-@interface tagFourCell(){
-    NSArray *_model;
-}
 
-@end
 @implementation tagFourCell
 
-
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+                __weak typeof(self) weakSelf = self;
+        self.param =
+        TagParam()
+        .wInsertTextClick(^(NSString * _Nonnull text, NSArray * _Nonnull modelArr) {
+            if ([weakSelf.delegate respondsToSelector:@selector(updateCell:data:)]) {
+                [weakSelf.delegate updateCell:weakSelf data:modelArr];
+            }
+        })
+        .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
+            make.top.left.bottom.mas_equalTo(0);
+            make.width.mas_equalTo(TagWitdh);
+        })
+        .wInsertaBleSet(YES).wTagAlignSet(TagAlignRight)
+        .wHitSet(YES).wTypeSet(danger).wSizeSet(mini);
+        self.myTag = [[WMZTags alloc]initConfigureWithModel:self.param withView:self.contentView];
+        
+    }
+    return self;
+}
 - (void)setModel:(NSArray *)model{
-    _model = model;
-    __weak typeof(self) weakSelf = self;
-    self.param.wDataSet(model)
-    .wInsertTextClick(^(NSString * _Nonnull text, NSArray * _Nonnull modelArr) {
-        if ([weakSelf.delegate respondsToSelector:@selector(updateCell:data:)]) {
-            [weakSelf.delegate updateCell:weakSelf data:modelArr];
-        }
-    })
-    .wInsertaBleSet(YES).wTagAlignSet(TagAlignRight)
-    .wHitSet(YES).wTypeSet(danger).wSizeSet(mini);
-    [self updateInnerData:self.param];
+    [super setModel:model];
+    self.param.wDataSet(model);
+    [self.myTag updateUI];
     
 }
 - (void)awakeFromNib {

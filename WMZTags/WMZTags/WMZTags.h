@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  更新方法
  *
  */
-- (void)updateUI:(BOOL)shouldReset;
+- (void)updateUI;
 
 @end
 

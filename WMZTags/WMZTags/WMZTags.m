@@ -12,8 +12,7 @@
 }
 //按钮数组
 @property(nonatomic,strong)NSMutableArray *btnArr;
-//判断是不是tableviewCell
-@property(nonatomic,assign)BOOL tabelViewCell;
+
 @end
 @implementation WMZTags
 
@@ -31,13 +30,11 @@
 
 
 //更新
-- (void)updateUI:(BOOL)shouldReset{
-    if ((self.tabelViewCell&&(self.param.wClosable||self.param.wInsertaBle))||shouldReset) {
-        for (WMZTagBtn *btn in self.btnArr) {
-            [btn removeFromSuperview];
-        }
-        [self.btnArr removeAllObjects];
+- (void)updateUI{
+    for (WMZTagBtn *btn in self.btnArr) {
+        [btn removeFromSuperview];
     }
+    [self.btnArr removeAllObjects];
     [self createUI];
 }
 
@@ -45,6 +42,10 @@
     
     self.userInteractionEnabled = YES;
     self.param.wMasonry? [self mas_makeConstraints:self.param.wMasonry]:[self setFrame:self.param.wFrame];
+    self.btnArr = [NSMutableArray new];
+    if (self.param.wMasonry) {
+        [self.superview layoutIfNeeded];
+    }
     [self createUI];
     if (self.param.wBackGroundColor) self.backgroundColor = self.param.wBackGroundColor;
     
@@ -84,11 +85,6 @@
         }
     }
 
-
-    if (self.param.wMasonry) {
-        [self.superview layoutIfNeeded];
-    }
-    
     allWidth = 0;     //整体长度
     //减去的间距
     CGFloat margin = self.param.marginRight + self.param.marginLeft;
@@ -104,7 +100,6 @@
             [self addSubview:btn];
             [self setUpBtn:btn lastBtn:tempBtn  maxWidth:maxWidth  addBtnObj:YES isLast:i==self.param.wData.count-1];
             tempBtn = btn;
-            
         }
     }else{
         
@@ -208,13 +203,19 @@
             self.frame = rect;
         }
     }
-    
     //是否添加进按钮数组
     if (add) {
         [self.btnArr addObject:btn];
-        btn.selected = NO;
-    }else{
-        btn.selected = [btn isSelected];
+    }
+    
+    if (self.param.selectBtnArr.count) {
+        if ([self.param.selectBtnArr indexOfObject:[NSString stringWithFormat:@"%@-%ld",btn.titleLabel.text,btn.tag]]!=NSNotFound) {
+            btn.selected = YES;
+            [btn setUpBtnStyle];
+        }else{
+            btn.selected = NO;
+            [btn setUpBtnStyle];
+        }
     }
 
 }
@@ -264,6 +265,7 @@
     }
     //单点
     if (self.param.wSelectOne) {
+        self.param.selectBtnArr = [NSMutableArray new];
         for (WMZTagBtn *btn in self.btnArr) {
             if (btn == sender) {
                 btn.selected = !btn.selected;
@@ -271,6 +273,10 @@
                 btn.selected = NO;
             }
             [btn setUpBtnStyle];
+            if ([btn isSelected]) {
+                [self.param.selectBtnArr addObject:[NSString stringWithFormat:@"%@-%ld",btn.titleLabel.text,btn.tag]];
+            }
+
             
         }
         if (self.param.tapClick) {
@@ -285,10 +291,12 @@
         if (self.param.tagMoreClick) {
             NSMutableArray *indexArr = [NSMutableArray new];
             NSMutableArray *modelArr = [NSMutableArray new];
+            self.param.selectBtnArr = [NSMutableArray new];
             for (WMZTagBtn *btn in self.btnArr) {
                 if (btn.selected == YES) {
                     [indexArr addObject:@(btn.tag - 100)];
                     [modelArr addObject:btn.titleLabel.text];
+                    [self.param.selectBtnArr addObject:[NSString stringWithFormat:@"%@-%ld",btn.titleLabel.text,btn.tag]];
                 }
             }
             self.param.tagMoreClick(indexArr,modelArr);
@@ -324,13 +332,6 @@
     }
 }
 
-- (BOOL)tabelViewCell{
-     _tabelViewCell = NO;
-    if ([NSStringFromClass([self.superview class]) isEqualToString:@"UITableViewCellContentView"]||[self.superview isKindOfClass:[UITableViewCell class]]) {
-        _tabelViewCell = YES;
-    }
-    return _tabelViewCell;
-}
 
 - (NSMutableArray *)btnArr{
     if (!_btnArr) {
@@ -338,6 +339,7 @@
     }
     return _btnArr;
 }
+
 
 @end
 

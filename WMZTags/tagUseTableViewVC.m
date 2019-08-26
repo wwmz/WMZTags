@@ -84,6 +84,7 @@
 }
 
 
+
 - (NSMutableArray *)modelArr{
     if (!_modelArr) {
         _modelArr = [NSMutableArray new];
@@ -104,8 +105,7 @@
 
 - (NSArray *)cellNameArr{
     if (!_cellNameArr) {
-        _cellNameArr = @[@"WMZTagCell",@"tagOneCell",@"tagTwoCell",@"tagThreeCell",@"tagFourCell",@"tagFiveCell"];
-//          _cellNameArr = @[@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell",@"tagOneCell"];
+        _cellNameArr = @[@"tagZeroCell",@"tagOneCell",@"tagTwoCell",@"tagThreeCell",@"tagFourCell",@"tagFiveCell"];
     }
     return _cellNameArr;
 }

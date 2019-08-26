@@ -11,28 +11,35 @@
 //
 
 #import "tagThreeCell.h"
-@interface tagThreeCell(){
-    NSArray *_model;
+@implementation tagThreeCell
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        __weak typeof(self) weakSelf = self;
+        self.param =
+        TagParam()
+        .wCloseClick(^(NSInteger index, id  _Nonnull model,NSArray * _Nonnull modelArr) {
+            NSLog(@"删除的回调 %ld %@ %@",index,model,modelArr);
+            if ([weakSelf.delegate respondsToSelector:@selector(updateCell:data:)]) {
+                [weakSelf.delegate updateCell:weakSelf data:modelArr];
+            }
+        })
+        .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
+            make.top.left.bottom.mas_equalTo(0);
+            make.width.mas_equalTo(TagWitdh);
+        })
+        .wLineaBleSet(YES)
+        .wLineNumSet(3)
+        .wClosableSet(YES).wTypeSet(warning);
+        self.myTag = [[WMZTags alloc]initConfigureWithModel:self.param withView:self.contentView];
+        
+    }
+    return self;
 }
 
-@end
-@implementation tagThreeCell
-
-
 - (void)setModel:(NSArray *)model{
-    _model = model;
-     __weak typeof(self) weakSelf = self;
-    self.param
-    .wCloseClick(^(NSInteger index, id  _Nonnull model,NSArray * _Nonnull modelArr) {
-         NSLog(@"删除的回调 %ld %@ %@",index,model,modelArr);
-        if ([weakSelf.delegate respondsToSelector:@selector(updateCell:data:)]) {
-            [weakSelf.delegate updateCell:weakSelf data:modelArr];
-        }
-    })
-    .wLineaBleSet(YES)
-    .wLineNumSet(3)
-    .wClosableSet(YES).wDataSet(model).wTypeSet(warning);
-    [self updateInnerData:self.param];
+    [super setModel:model];
+    self.param.wDataSet(model);
+    [self.myTag updateUI];
     
     
 }

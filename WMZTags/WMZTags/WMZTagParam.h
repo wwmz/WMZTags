@@ -159,10 +159,10 @@ WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wHit)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wLineaBle)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, TagAlign,          wTagAlign)
-WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, NSArray*,          wData)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           wBoderWidth)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           wRadius)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wBoderColor)
+WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, NSArray*,          wData)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wInnerColor)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wColor)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wSelectBoderColor)
@@ -189,10 +189,13 @@ WMZPropStatementAndPropSetFuncStatement(copy,   WMZTagParam, NSString*,         
 WMZPropStatementAndPropSetFuncStatement(copy,   WMZTagParam, NSString*,         imageName)
 WMZPropStatementAndPropSetFuncStatement(copy,   WMZTagParam, NSString*,         selectImageName)
 
+
 /* =========================================Attributes==========================================*/
 
-
-
+/* =========================================myProperty==========================================*/
+@property(nonatomic,strong)NSMutableArray *selectBtnArr;
+@property(nonatomic,strong)NSIndexPath *path;
+/* =========================================myProperty==========================================*/
 
 /* =========================================Events==============================================*/
 WMZTagParam * TagParam(void);

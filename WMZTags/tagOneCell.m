@@ -11,21 +11,34 @@
 //
 
 #import "tagOneCell.h"
-@interface tagOneCell(){
-    NSArray *_model;
-}
-@end
 @implementation tagOneCell
 
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+
+        self.param =
+        TagParam()
+        .wDataSet(@[@"1",@"2"])
+        .wSelectOneSet(YES)
+        .wTagAlignSet(TagAlignRight)
+        .wTapClick(^(NSInteger index, id  _Nonnull model, BOOL isSelected) {
+            NSLog(@"单点的点击回调 %ld %@  %@",index,model,isSelected?@"选中":@"取消选中");
+        })
+         .imageNameSet(@"notCheck").selectImageNameSet(@"check").wTypeSet(success)
+        .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
+            make.top.left.bottom.mas_equalTo(0);
+            make.width.mas_equalTo(TagWitdh);
+        });
+        self.myTag = [[WMZTags alloc]initConfigureWithModel:self.param withView:self.contentView];
+        
+    }
+    return self;
+}
 
 - (void)setModel:(NSArray *)model{
-    _model = model;
-    self.param.wInsertaBleSet(NO).wSelectOneSet(YES).wDataSet(model).wTagAlignSet(TagAlignRight)
-    .wTapClick(^(NSInteger index, id  _Nonnull model, BOOL isSelected) {
-        NSLog(@"单点的点击回调 %ld %@  %@",index,model,isSelected?@"选中":@"取消选中");
-    })
-    .imageNameSet(@"notCheck").selectImageNameSet(@"check").wTypeSet(success) ;
-    [self updateInnerData:self.param];
+    [super setModel:model];
+    self.param.wDataSet(model);
+    [self.myTag updateUI];
     
 }
 - (void)awakeFromNib {

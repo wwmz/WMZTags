@@ -240,10 +240,6 @@
     }
 }
 
-- (NSString *)description{
-    return [NSString stringWithFormat:@"%@",self.titleLabel.text];
-}
-
 @end
 
 

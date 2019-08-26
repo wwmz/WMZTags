@@ -1,31 +1,27 @@
 
 
 
+
 //
-//  tagTwoCell.m
+//  tagZeroCell.m
 //  WMZTags
 //
-//  Created by wmz on 2019/5/29.
-//  Copyright © 2019年 wmz. All rights reserved.
+//  Created by wmz on 2019/8/26.
+//  Copyright © 2019 wmz. All rights reserved.
 //
 
-#import "tagTwoCell.h"
+#import "tagZeroCell.h"
 
-@implementation tagTwoCell
-
+@implementation tagZeroCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-
+        
         self.param =
         TagParam()
-        .wSelectMoreSet(YES).textImageNameSet(@"💖").selecTextImageNameSet(@"❤️")
-        .imagePositionSet(TagImagePositionLeft).wTypeSet(info)
+        .wDataSet(@[@"1",@"2"])
         .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
             make.top.left.bottom.mas_equalTo(0);
             make.width.mas_equalTo(TagWitdh);
-        })
-        .wMoreTapClick(^(NSArray * _Nonnull indexArr, NSArray * _Nonnull modelArr) {
-            NSLog(@"多点的点击回调 %@ %@",indexArr,modelArr);
         });
         self.myTag = [[WMZTags alloc]initConfigureWithModel:self.param withView:self.contentView];
         
@@ -49,6 +45,5 @@
 
     // Configure the view for the selected state
 }
-
 
 @end

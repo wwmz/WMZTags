@@ -28,7 +28,6 @@
 		186244D72297B90D00584406 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244CB2297B90D00584406 /* View+MASAdditions.m */; };
 		186244D82297B90D00584406 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244CE2297B90D00584406 /* ViewController+MASAdditions.m */; };
 		186244DB2297BD4C00584406 /* WMZTagBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244DA2297BD4C00584406 /* WMZTagBtn.m */; };
-		186244DE2297E1CE00584406 /* WMZTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244DD2297E1CE00584406 /* WMZTagCell.m */; };
 		187C9E7F229BC89C000C7436 /* WMZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E7E229BC89C000C7436 /* WMZTool.m */; };
 		187C9E86229E75F6000C7436 /* tagOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E85229E75F6000C7436 /* tagOneCell.m */; };
 		187C9E89229E7605000C7436 /* tagTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E88229E7605000C7436 /* tagTwoCell.m */; };
@@ -36,6 +35,8 @@
 		187C9E8F229E761C000C7436 /* tagFourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E8E229E761C000C7436 /* tagFourCell.m */; };
 		187C9E92229E7627000C7436 /* tagFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E91229E7627000C7436 /* tagFiveCell.m */; };
 		187C9E95229E7645000C7436 /* tagUseTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E94229E7645000C7436 /* tagUseTableViewVC.m */; };
+		F3437C022313CED3002EBA95 /* WMZTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3437C012313CED3002EBA95 /* WMZTagCell.m */; };
+		F3437C082313D17E002EBA95 /* tagZeroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3437C072313D17E002EBA95 /* tagZeroCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,8 +104,6 @@
 		186244CE2297B90D00584406 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		186244D92297BD4C00584406 /* WMZTagBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTagBtn.h; sourceTree = "<group>"; };
 		186244DA2297BD4C00584406 /* WMZTagBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTagBtn.m; sourceTree = "<group>"; };
-		186244DC2297E1CE00584406 /* WMZTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTagCell.h; sourceTree = "<group>"; };
-		186244DD2297E1CE00584406 /* WMZTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTagCell.m; sourceTree = "<group>"; };
 		187C9E7D229BC89C000C7436 /* WMZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTool.h; sourceTree = "<group>"; };
 		187C9E7E229BC89C000C7436 /* WMZTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTool.m; sourceTree = "<group>"; };
 		187C9E84229E75F6000C7436 /* tagOneCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagOneCell.h; sourceTree = "<group>"; };
@@ -119,6 +118,10 @@
 		187C9E91229E7627000C7436 /* tagFiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagFiveCell.m; sourceTree = "<group>"; };
 		187C9E93229E7645000C7436 /* tagUseTableViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagUseTableViewVC.h; sourceTree = "<group>"; };
 		187C9E94229E7645000C7436 /* tagUseTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagUseTableViewVC.m; sourceTree = "<group>"; };
+		F3437C002313CED3002EBA95 /* WMZTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTagCell.h; sourceTree = "<group>"; };
+		F3437C012313CED3002EBA95 /* WMZTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTagCell.m; sourceTree = "<group>"; };
+		F3437C062313D17E002EBA95 /* tagZeroCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagZeroCell.h; sourceTree = "<group>"; };
+		F3437C072313D17E002EBA95 /* tagZeroCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagZeroCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 				186244812296979E00584406 /* LaunchScreen.storyboard */,
 				186244842296979E00584406 /* Info.plist */,
 				186244852296979E00584406 /* main.m */,
+				F3437C062313D17E002EBA95 /* tagZeroCell.h */,
+				F3437C072313D17E002EBA95 /* tagZeroCell.m */,
 				187C9E84229E75F6000C7436 /* tagOneCell.h */,
 				187C9E85229E75F6000C7436 /* tagOneCell.m */,
 				187C9E87229E7605000C7436 /* tagTwoCell.h */,
@@ -219,8 +224,8 @@
 			children = (
 				186244A9229697E600584406 /* WMZTags.h */,
 				186244AA229697E600584406 /* WMZTags.m */,
-				186244DC2297E1CE00584406 /* WMZTagCell.h */,
-				186244DD2297E1CE00584406 /* WMZTagCell.m */,
+				F3437C002313CED3002EBA95 /* WMZTagCell.h */,
+				F3437C012313CED3002EBA95 /* WMZTagCell.m */,
 				186244AC22969DD500584406 /* WMZTagParam.h */,
 				186244AD22969DD500584406 /* WMZTagParam.m */,
 				186244D92297BD4C00584406 /* WMZTagBtn.h */,
@@ -394,6 +399,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				187C9E92229E7627000C7436 /* tagFiveCell.m in Sources */,
+				F3437C082313D17E002EBA95 /* tagZeroCell.m in Sources */,
+				F3437C022313CED3002EBA95 /* WMZTagCell.m in Sources */,
 				187C9E7F229BC89C000C7436 /* WMZTool.m in Sources */,
 				186244D02297B90D00584406 /* MASConstraint.m in Sources */,
 				187C9E95229E7645000C7436 /* tagUseTableViewVC.m in Sources */,
@@ -403,7 +410,6 @@
 				187C9E89229E7605000C7436 /* tagTwoCell.m in Sources */,
 				1862447B2296979600584406 /* ViewController.m in Sources */,
 				186244D42297B90D00584406 /* MASViewConstraint.m in Sources */,
-				186244DE2297E1CE00584406 /* WMZTagCell.m in Sources */,
 				186244D22297B90D00584406 /* MASLayoutConstraint.m in Sources */,
 				187C9E8F229E761C000C7436 /* tagFourCell.m in Sources */,
 				186244AB229697E600584406 /* WMZTags.m in Sources */,
