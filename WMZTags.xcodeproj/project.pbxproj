@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11FE06BACA89D4C15688A27E /* Pods_WMZTags.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418654A01EEE8D481B410A91 /* Pods_WMZTags.framework */; };
 		186244782296979600584406 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186244772296979600584406 /* AppDelegate.m */; };
 		1862447B2296979600584406 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862447A2296979600584406 /* ViewController.m */; };
 		1862447E2296979600584406 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1862447C2296979600584406 /* Main.storyboard */; };
@@ -21,22 +22,14 @@
 		187C9E8F229E761C000C7436 /* tagFourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E8E229E761C000C7436 /* tagFourCell.m */; };
 		187C9E92229E7627000C7436 /* tagFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E91229E7627000C7436 /* tagFiveCell.m */; };
 		187C9E95229E7645000C7436 /* tagUseTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E94229E7645000C7436 /* tagUseTableViewVC.m */; };
+		616095AF1AD0AE45A619D4F6 /* Pods_WMZTagsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4E3038A7E4DD89ECB574D4 /* Pods_WMZTagsTests.framework */; };
 		F3437C082313D17E002EBA95 /* tagZeroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3437C072313D17E002EBA95 /* tagZeroCell.m */; };
 		F35F5B8D231C0D3800900D47 /* WMZTagParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5B84231C0D3800900D47 /* WMZTagParam.m */; };
 		F35F5B8E231C0D3800900D47 /* WMZTagBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5B88231C0D3800900D47 /* WMZTagBtn.m */; };
 		F35F5B8F231C0D3800900D47 /* WMZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5B89231C0D3800900D47 /* WMZTool.m */; };
 		F35F5B90231C0D3800900D47 /* WMZTags.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5B8A231C0D3800900D47 /* WMZTags.m */; };
 		F35F5B91231C0D3800900D47 /* WMZTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5B8C231C0D3800900D47 /* WMZTagCell.m */; };
-		F35F5BAC231C0E1B00900D47 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5B94231C0E1B00900D47 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		F35F5BAD231C0E1B00900D47 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5B9D231C0E1B00900D47 /* ViewController+MASAdditions.m */; };
-		F35F5BAE231C0E1B00900D47 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5BA1231C0E1B00900D47 /* MASCompositeConstraint.m */; };
-		F35F5BAF231C0E1B00900D47 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5BA2231C0E1B00900D47 /* MASConstraintMaker.m */; };
-		F35F5BB0231C0E1B00900D47 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5BA3231C0E1B00900D47 /* MASLayoutConstraint.m */; };
-		F35F5BB1231C0E1B00900D47 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5BA4231C0E1B00900D47 /* NSArray+MASAdditions.m */; };
-		F35F5BB2231C0E1B00900D47 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5BA5231C0E1B00900D47 /* View+MASAdditions.m */; };
-		F35F5BB3231C0E1B00900D47 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5BA8231C0E1B00900D47 /* MASConstraint.m */; };
-		F35F5BB4231C0E1B00900D47 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5BAA231C0E1B00900D47 /* MASViewConstraint.m */; };
-		F35F5BB5231C0E1B00900D47 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F5BAB231C0E1B00900D47 /* MASViewAttribute.m */; };
+		F986B3225DA681AF40E9004C /* Pods_WMZTagsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4C04D64E2D7D7A9956840F /* Pods_WMZTagsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A8D3A50FFF3CA980FAAD8AB /* Pods-WMZTags.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTags.release.xcconfig"; path = "Target Support Files/Pods-WMZTags/Pods-WMZTags.release.xcconfig"; sourceTree = "<group>"; };
+		0AF08B12B5FFB49E0052F7C9 /* Pods-WMZTagsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTagsUITests.release.xcconfig"; path = "Target Support Files/Pods-WMZTagsUITests/Pods-WMZTagsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		186244732296979600584406 /* WMZTags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMZTags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186244762296979600584406 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		186244772296979600584406 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,6 +80,13 @@
 		187C9E91229E7627000C7436 /* tagFiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagFiveCell.m; sourceTree = "<group>"; };
 		187C9E93229E7645000C7436 /* tagUseTableViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagUseTableViewVC.h; sourceTree = "<group>"; };
 		187C9E94229E7645000C7436 /* tagUseTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagUseTableViewVC.m; sourceTree = "<group>"; };
+		418654A01EEE8D481B410A91 /* Pods_WMZTags.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMZTags.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BEF110EAF85565352ABEFDD /* Pods-WMZTags.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTags.debug.xcconfig"; path = "Target Support Files/Pods-WMZTags/Pods-WMZTags.debug.xcconfig"; sourceTree = "<group>"; };
+		788B4BEF0C24523B25C96F9F /* Pods-WMZTagsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTagsUITests.debug.xcconfig"; path = "Target Support Files/Pods-WMZTagsUITests/Pods-WMZTagsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F4E3038A7E4DD89ECB574D4 /* Pods_WMZTagsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMZTagsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10FFD47B56F3061937E2A75 /* Pods-WMZTagsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTagsTests.release.xcconfig"; path = "Target Support Files/Pods-WMZTagsTests/Pods-WMZTagsTests.release.xcconfig"; sourceTree = "<group>"; };
+		C610294961C97750330B1F12 /* Pods-WMZTagsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTagsTests.debug.xcconfig"; path = "Target Support Files/Pods-WMZTagsTests/Pods-WMZTagsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD4C04D64E2D7D7A9956840F /* Pods_WMZTagsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMZTagsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3437C062313D17E002EBA95 /* tagZeroCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagZeroCell.h; sourceTree = "<group>"; };
 		F3437C072313D17E002EBA95 /* tagZeroCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagZeroCell.m; sourceTree = "<group>"; };
 		F35F5B83231C0D3800900D47 /* WMZTagBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZTagBtn.h; sourceTree = "<group>"; };
@@ -97,31 +99,6 @@
 		F35F5B8A231C0D3800900D47 /* WMZTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTags.m; sourceTree = "<group>"; };
 		F35F5B8B231C0D3800900D47 /* WMZTagParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZTagParam.h; sourceTree = "<group>"; };
 		F35F5B8C231C0D3800900D47 /* WMZTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTagCell.m; sourceTree = "<group>"; };
-		F35F5B93231C0E1B00900D47 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		F35F5B94231C0E1B00900D47 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		F35F5B95231C0E1B00900D47 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		F35F5B96231C0E1B00900D47 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		F35F5B97231C0E1B00900D47 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		F35F5B98231C0E1B00900D47 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		F35F5B99231C0E1B00900D47 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		F35F5B9A231C0E1B00900D47 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		F35F5B9B231C0E1B00900D47 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		F35F5B9C231C0E1B00900D47 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		F35F5B9D231C0E1B00900D47 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		F35F5B9E231C0E1B00900D47 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		F35F5B9F231C0E1B00900D47 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		F35F5BA0231C0E1B00900D47 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		F35F5BA1231C0E1B00900D47 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		F35F5BA2231C0E1B00900D47 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		F35F5BA3231C0E1B00900D47 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		F35F5BA4231C0E1B00900D47 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		F35F5BA5231C0E1B00900D47 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		F35F5BA6231C0E1B00900D47 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		F35F5BA7231C0E1B00900D47 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		F35F5BA8231C0E1B00900D47 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		F35F5BA9231C0E1B00900D47 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		F35F5BAA231C0E1B00900D47 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		F35F5BAB231C0E1B00900D47 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FE06BACA89D4C15688A27E /* Pods_WMZTags.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				616095AF1AD0AE45A619D4F6 /* Pods_WMZTagsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F986B3225DA681AF40E9004C /* Pods_WMZTagsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +136,8 @@
 				1862448E2296979E00584406 /* WMZTagsTests */,
 				186244992296979E00584406 /* WMZTagsUITests */,
 				186244742296979600584406 /* Products */,
+				EEBF633FB8781F29A2BD967C /* Pods */,
+				C5734D6FFFA4B67F47599A04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,7 +154,6 @@
 		186244752296979600584406 /* WMZTags */ = {
 			isa = PBXGroup;
 			children = (
-				F35F5B92231C0E1B00900D47 /* Masonry */,
 				F35F5B82231C0D3800900D47 /* WMZTag */,
 				186244762296979600584406 /* AppDelegate.h */,
 				186244772296979600584406 /* AppDelegate.m */,
@@ -219,53 +200,44 @@
 			path = WMZTagsUITests;
 			sourceTree = "<group>";
 		};
+		C5734D6FFFA4B67F47599A04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				418654A01EEE8D481B410A91 /* Pods_WMZTags.framework */,
+				9F4E3038A7E4DD89ECB574D4 /* Pods_WMZTagsTests.framework */,
+				DD4C04D64E2D7D7A9956840F /* Pods_WMZTagsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEBF633FB8781F29A2BD967C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BEF110EAF85565352ABEFDD /* Pods-WMZTags.debug.xcconfig */,
+				0A8D3A50FFF3CA980FAAD8AB /* Pods-WMZTags.release.xcconfig */,
+				C610294961C97750330B1F12 /* Pods-WMZTagsTests.debug.xcconfig */,
+				B10FFD47B56F3061937E2A75 /* Pods-WMZTagsTests.release.xcconfig */,
+				788B4BEF0C24523B25C96F9F /* Pods-WMZTagsUITests.debug.xcconfig */,
+				0AF08B12B5FFB49E0052F7C9 /* Pods-WMZTagsUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F35F5B82231C0D3800900D47 /* WMZTag */ = {
 			isa = PBXGroup;
 			children = (
+				F35F5B86231C0D3800900D47 /* WMZTags.h */,
+				F35F5B8A231C0D3800900D47 /* WMZTags.m */,
 				F35F5B83231C0D3800900D47 /* WMZTagBtn.h */,
+				F35F5B88231C0D3800900D47 /* WMZTagBtn.m */,
+				F35F5B8B231C0D3800900D47 /* WMZTagParam.h */,
 				F35F5B84231C0D3800900D47 /* WMZTagParam.m */,
 				F35F5B85231C0D3800900D47 /* WMZTagCell.h */,
-				F35F5B86231C0D3800900D47 /* WMZTags.h */,
-				F35F5B87231C0D3800900D47 /* WMZTool.h */,
-				F35F5B88231C0D3800900D47 /* WMZTagBtn.m */,
-				F35F5B89231C0D3800900D47 /* WMZTool.m */,
-				F35F5B8A231C0D3800900D47 /* WMZTags.m */,
-				F35F5B8B231C0D3800900D47 /* WMZTagParam.h */,
 				F35F5B8C231C0D3800900D47 /* WMZTagCell.m */,
+				F35F5B87231C0D3800900D47 /* WMZTool.h */,
+				F35F5B89231C0D3800900D47 /* WMZTool.m */,
 			);
 			path = WMZTag;
-			sourceTree = SOURCE_ROOT;
-		};
-		F35F5B92231C0E1B00900D47 /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				F35F5B93231C0E1B00900D47 /* MASCompositeConstraint.h */,
-				F35F5B94231C0E1B00900D47 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				F35F5B95231C0E1B00900D47 /* MASConstraint+Private.h */,
-				F35F5B96231C0E1B00900D47 /* MASLayoutConstraint.h */,
-				F35F5B97231C0E1B00900D47 /* NSArray+MASShorthandAdditions.h */,
-				F35F5B98231C0E1B00900D47 /* MASConstraintMaker.h */,
-				F35F5B99231C0E1B00900D47 /* View+MASAdditions.h */,
-				F35F5B9A231C0E1B00900D47 /* NSArray+MASAdditions.h */,
-				F35F5B9B231C0E1B00900D47 /* MASUtilities.h */,
-				F35F5B9C231C0E1B00900D47 /* MASViewAttribute.h */,
-				F35F5B9D231C0E1B00900D47 /* ViewController+MASAdditions.m */,
-				F35F5B9E231C0E1B00900D47 /* MASViewConstraint.h */,
-				F35F5B9F231C0E1B00900D47 /* MASConstraint.h */,
-				F35F5BA0231C0E1B00900D47 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				F35F5BA1231C0E1B00900D47 /* MASCompositeConstraint.m */,
-				F35F5BA2231C0E1B00900D47 /* MASConstraintMaker.m */,
-				F35F5BA3231C0E1B00900D47 /* MASLayoutConstraint.m */,
-				F35F5BA4231C0E1B00900D47 /* NSArray+MASAdditions.m */,
-				F35F5BA5231C0E1B00900D47 /* View+MASAdditions.m */,
-				F35F5BA6231C0E1B00900D47 /* View+MASShorthandAdditions.h */,
-				F35F5BA7231C0E1B00900D47 /* Masonry.h */,
-				F35F5BA8231C0E1B00900D47 /* MASConstraint.m */,
-				F35F5BA9231C0E1B00900D47 /* ViewController+MASAdditions.h */,
-				F35F5BAA231C0E1B00900D47 /* MASViewConstraint.m */,
-				F35F5BAB231C0E1B00900D47 /* MASViewAttribute.m */,
-			);
-			path = Masonry;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -275,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1862449F2296979E00584406 /* Build configuration list for PBXNativeTarget "WMZTags" */;
 			buildPhases = (
+				E30471DED2550F25DD90A710 /* [CP] Check Pods Manifest.lock */,
 				1862446F2296979600584406 /* Sources */,
 				186244702296979600584406 /* Frameworks */,
 				186244712296979600584406 /* Resources */,
+				D3262DA2F5A2D3DE8E3CA803 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -440,6 +414,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D3262DA2F5A2D3DE8E3CA803 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WMZTags/Pods-WMZTags-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WMZTags/Pods-WMZTags-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WMZTags/Pods-WMZTags-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E30471DED2550F25DD90A710 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WMZTags-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -451,26 +464,16 @@
 				F3437C082313D17E002EBA95 /* tagZeroCell.m in Sources */,
 				187C9E95229E7645000C7436 /* tagUseTableViewVC.m in Sources */,
 				187C9E89229E7605000C7436 /* tagTwoCell.m in Sources */,
-				F35F5BAE231C0E1B00900D47 /* MASCompositeConstraint.m in Sources */,
 				F35F5B8E231C0D3800900D47 /* WMZTagBtn.m in Sources */,
-				F35F5BB3231C0E1B00900D47 /* MASConstraint.m in Sources */,
-				F35F5BB2231C0E1B00900D47 /* View+MASAdditions.m in Sources */,
 				1862447B2296979600584406 /* ViewController.m in Sources */,
 				187C9E8F229E761C000C7436 /* tagFourCell.m in Sources */,
-				F35F5BB5231C0E1B00900D47 /* MASViewAttribute.m in Sources */,
-				F35F5BAC231C0E1B00900D47 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				186244862296979E00584406 /* main.m in Sources */,
 				F35F5B8D231C0D3800900D47 /* WMZTagParam.m in Sources */,
 				F35F5B8F231C0D3800900D47 /* WMZTool.m in Sources */,
-				F35F5BB0231C0E1B00900D47 /* MASLayoutConstraint.m in Sources */,
-				F35F5BB4231C0E1B00900D47 /* MASViewConstraint.m in Sources */,
 				F35F5B91231C0D3800900D47 /* WMZTagCell.m in Sources */,
-				F35F5BB1231C0E1B00900D47 /* NSArray+MASAdditions.m in Sources */,
 				187C9E8C229E760F000C7436 /* tagThreeCell.m in Sources */,
-				F35F5BAF231C0E1B00900D47 /* MASConstraintMaker.m in Sources */,
 				F35F5B90231C0D3800900D47 /* WMZTags.m in Sources */,
 				187C9E86229E75F6000C7436 /* tagOneCell.m in Sources */,
-				F35F5BAD231C0E1B00900D47 /* ViewController+MASAdditions.m in Sources */,
 				186244782296979600584406 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,6 +643,7 @@
 		};
 		186244A02296979E00584406 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BEF110EAF85565352ABEFDD /* Pods-WMZTags.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
@@ -658,6 +662,7 @@
 		};
 		186244A12296979E00584406 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A8D3A50FFF3CA980FAAD8AB /* Pods-WMZTags.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
@@ -676,6 +681,7 @@
 		};
 		186244A32296979E00584406 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C610294961C97750330B1F12 /* Pods-WMZTagsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -695,6 +701,7 @@
 		};
 		186244A42296979E00584406 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B10FFD47B56F3061937E2A75 /* Pods-WMZTagsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -714,6 +721,7 @@
 		};
 		186244A62296979E00584406 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788B4BEF0C24523B25C96F9F /* Pods-WMZTagsUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HR6T4LQD9T;
@@ -732,6 +740,7 @@
 		};
 		186244A72296979E00584406 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF08B12B5FFB49E0052F7C9 /* Pods-WMZTagsUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HR6T4LQD9T;
