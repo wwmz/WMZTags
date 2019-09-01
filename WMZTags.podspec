@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author       = { "wmz" => "925457662@qq.com" }
   s.platform     = :ios
   s.source       = { :git => "https://github.com/wwmz/WMZTags.git", :tag => "1.0.1" }
-  s.source_files = "WMZTags", "WMZTags/WMZTags/**/*.{h,m}"
+  s.source_files = "WMZTags/WMZTags/**/*.{h,m}"
   s.dependency 'Masonry'
   #s.frameworks = 'UIKit'
 end
