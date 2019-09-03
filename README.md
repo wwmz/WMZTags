@@ -9,7 +9,7 @@ pod 'WMZTags'       或者直接拉WMZTags文件夹进入项目
 要在Buildding Settings 把CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF 设为NO
 
 
-使用说明（简单使用,支持frame布局和masonry布局）
+## 使用说明（简单使用,支持frame布局和masonry布局）
 
 ```
  //frame使用
@@ -34,11 +34,11 @@ pod 'WMZTags'       或者直接拉WMZTags文件夹进入项目
 ```
 
 * * *
-##其他用法参数说明
+## 其他用法参数说明
 ![87A7F1EE-0566-4011-BA5C-022BD159F9FA.png](https://upload-images.jianshu.io/upload_images/9163368-3cbd369851830966.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-##实际使用
+## 实际使用
 ```
      TagParam()
     .imageNameSet(@"notCheck")                                                         //未选择的图片
