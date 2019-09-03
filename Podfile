@@ -17,5 +17,6 @@ target 'WMZTags' do
     # Pods for testing
   end
   
+    pod 'Masonry'
 
 end
