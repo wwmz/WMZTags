@@ -6,7 +6,6 @@
 //  Copyright © 2019 wmz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "WMZTags.h"
 NS_ASSUME_NONNULL_BEGIN
 @protocol WMZTagDelegate <NSObject>

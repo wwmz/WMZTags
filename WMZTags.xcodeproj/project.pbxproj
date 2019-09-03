@@ -23,7 +23,6 @@
 		187C9E95229E7645000C7436 /* tagUseTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E94229E7645000C7436 /* tagUseTableViewVC.m */; };
 		F32090F3231E314900460E25 /* WMZTagParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F32090EA231E314900460E25 /* WMZTagParam.m */; };
 		F32090F4231E314900460E25 /* WMZTagBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = F32090EE231E314900460E25 /* WMZTagBtn.m */; };
-		F32090F5231E314900460E25 /* WMZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F32090EF231E314900460E25 /* WMZTool.m */; };
 		F32090F6231E314900460E25 /* WMZTags.m in Sources */ = {isa = PBXBuildFile; fileRef = F32090F0231E314900460E25 /* WMZTags.m */; };
 		F32090F7231E314900460E25 /* WMZTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F32090F2231E314900460E25 /* WMZTagCell.m */; };
 		F3209112231E31AF00460E25 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F32090FA231E31AF00460E25 /* NSLayoutConstraint+MASDebugAdditions.m */; };
@@ -36,6 +35,7 @@
 		F3209119231E31AF00460E25 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F320910E231E31AF00460E25 /* MASConstraint.m */; };
 		F320911A231E31AF00460E25 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F3209110231E31AF00460E25 /* MASViewConstraint.m */; };
 		F320911B231E31AF00460E25 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = F3209111231E31AF00460E25 /* MASViewAttribute.m */; };
+		F3209120231E418B00460E25 /* WMZTagsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F320911F231E418B00460E25 /* WMZTagsTool.m */; };
 		F3437C082313D17E002EBA95 /* tagZeroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3437C072313D17E002EBA95 /* tagZeroCell.m */; };
 /* End PBXBuildFile section */
 
@@ -89,9 +89,7 @@
 		F32090EA231E314900460E25 /* WMZTagParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTagParam.m; sourceTree = "<group>"; };
 		F32090EB231E314900460E25 /* WMZTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZTagCell.h; sourceTree = "<group>"; };
 		F32090EC231E314900460E25 /* WMZTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZTags.h; sourceTree = "<group>"; };
-		F32090ED231E314900460E25 /* WMZTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZTool.h; sourceTree = "<group>"; };
 		F32090EE231E314900460E25 /* WMZTagBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTagBtn.m; sourceTree = "<group>"; };
-		F32090EF231E314900460E25 /* WMZTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTool.m; sourceTree = "<group>"; };
 		F32090F0231E314900460E25 /* WMZTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTags.m; sourceTree = "<group>"; };
 		F32090F1231E314900460E25 /* WMZTagParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZTagParam.h; sourceTree = "<group>"; };
 		F32090F2231E314900460E25 /* WMZTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTagCell.m; sourceTree = "<group>"; };
@@ -120,6 +118,9 @@
 		F320910F231E31AF00460E25 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		F3209110231E31AF00460E25 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		F3209111231E31AF00460E25 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		F320911D231E3C4800460E25 /* HeaderFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFiles.h; sourceTree = "<group>"; };
+		F320911E231E418B00460E25 /* WMZTagsTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTagsTool.h; sourceTree = "<group>"; };
+		F320911F231E418B00460E25 /* WMZTagsTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTagsTool.m; sourceTree = "<group>"; };
 		F3437C062313D17E002EBA95 /* tagZeroCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagZeroCell.h; sourceTree = "<group>"; };
 		F3437C072313D17E002EBA95 /* tagZeroCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagZeroCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -223,15 +224,16 @@
 			isa = PBXGroup;
 			children = (
 				F32090E9231E314900460E25 /* WMZTagBtn.h */,
+				F32090EE231E314900460E25 /* WMZTagBtn.m */,
+				F32090F1231E314900460E25 /* WMZTagParam.h */,
 				F32090EA231E314900460E25 /* WMZTagParam.m */,
 				F32090EB231E314900460E25 /* WMZTagCell.h */,
-				F32090EC231E314900460E25 /* WMZTags.h */,
-				F32090ED231E314900460E25 /* WMZTool.h */,
-				F32090EE231E314900460E25 /* WMZTagBtn.m */,
-				F32090EF231E314900460E25 /* WMZTool.m */,
-				F32090F0231E314900460E25 /* WMZTags.m */,
-				F32090F1231E314900460E25 /* WMZTagParam.h */,
 				F32090F2231E314900460E25 /* WMZTagCell.m */,
+				F32090EC231E314900460E25 /* WMZTags.h */,
+				F32090F0231E314900460E25 /* WMZTags.m */,
+				F320911E231E418B00460E25 /* WMZTagsTool.h */,
+				F320911F231E418B00460E25 /* WMZTagsTool.m */,
+				F320911D231E3C4800460E25 /* HeaderFiles.h */,
 			);
 			path = WMZTags;
 			sourceTree = "<group>";
@@ -461,7 +463,6 @@
 				F3209112231E31AF00460E25 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				186244862296979E00584406 /* main.m in Sources */,
 				F32090F3231E314900460E25 /* WMZTagParam.m in Sources */,
-				F32090F5231E314900460E25 /* WMZTool.m in Sources */,
 				F3209116231E31AF00460E25 /* MASLayoutConstraint.m in Sources */,
 				F320911A231E31AF00460E25 /* MASViewConstraint.m in Sources */,
 				F32090F7231E314900460E25 /* WMZTagCell.m in Sources */,
@@ -472,6 +473,7 @@
 				187C9E86229E75F6000C7436 /* tagOneCell.m in Sources */,
 				F3209113231E31AF00460E25 /* ViewController+MASAdditions.m in Sources */,
 				186244782296979600584406 /* AppDelegate.m in Sources */,
+				F3209120231E418B00460E25 /* WMZTagsTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

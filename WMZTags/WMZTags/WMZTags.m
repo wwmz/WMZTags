@@ -245,7 +245,7 @@
                 UITextField *textfield1 = alerVC.textFields[0];
                 [strongself addTag:textfield1.text];
             }]];
-            [[WMZTool getCurrentVC] presentViewController:alerVC animated:YES completion:nil];
+            [[WMZTagsTool getCurrentVC] presentViewController:alerVC animated:YES completion:nil];
         }
         return;
     }

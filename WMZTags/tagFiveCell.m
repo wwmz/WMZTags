@@ -37,7 +37,7 @@
                 UITextField *textfield1 = alerVC.textFields[0];
                 block(textfield1.text);
             }]];
-            [[WMZTool getCurrentVC] presentViewController:alerVC animated:YES completion:nil];
+            [[WMZTagsTool getCurrentVC] presentViewController:alerVC animated:YES completion:nil];
         });
         self.myTag = [[WMZTags alloc]initConfigureWithModel:self.param withView:self.contentView];
         

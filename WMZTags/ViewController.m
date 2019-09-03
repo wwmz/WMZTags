@@ -59,7 +59,7 @@
     .wTypeSet(danger)
     .wSizeSet(small)
     .imagePositionSet(TagImagePositionLeft)
-    .wBackGroundColorSet([WMZTool stringTOColor:@"#999999"])
+    .wBackGroundColorSet([WMZTagsTool stringTOColor:@"#999999"])
     .wSelectBoderColorSet([UIColor redColor])
     .wSelectInnerColorSet([UIColor redColor])
     .wSelectColorSet([UIColor redColor])

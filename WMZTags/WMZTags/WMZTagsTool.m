@@ -1,21 +1,14 @@
-
-
-
-
-
-
-
 //
-//  WMZTool.m
+//  WMZTagsTool.m
 //  WMZTags
 //
-//  Created by wmz on 2019/5/27.
-//  Copyright © 2019年 wmz. All rights reserved.
+//  Created by wmz on 2019/9/3.
+//  Copyright © 2019 wmz. All rights reserved.
 //
 
-#import "WMZTool.h"
+#import "WMZTagsTool.h"
 
-@implementation WMZTool
+@implementation WMZTagsTool
 + (UIImage *)imageWithString:(NSString *)string
                         font:(UIFont *)font
                        width:(CGFloat)width
@@ -162,5 +155,4 @@
     
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
 }
-
 @end

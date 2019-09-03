@@ -6,33 +6,9 @@
 //  Copyright © 2019年 wmz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "WMZTool.h"
+#import "WMZTagsTool.h"
 NS_ASSUME_NONNULL_BEGIN
 
-
-#define MColor  [WMZTool stringTOColor:@"#5297E1"]
-#define MInnerColor  [WMZTool stringTOColor:@"#CEE1F7"]
-#define MBoderColor  [WMZTool stringTOColor:@"#5297E1"]
-
-#define MSelectColor  [WMZTool stringTOColor:@"#ED4985"]
-#define MSelectInnerColor  [WMZTool stringTOColor:@"#F4C4C4"]
-#define MSelectBoderColor  [WMZTool stringTOColor:@"#ED4985"]
-
-#define MInsertPlaceholder  @"+New tag"
-
-
-#define WMZPropStatementAndPropSetFuncStatement(propertyModifier,className, propertyPointerType, propertyName)           \
-@property(nonatomic,propertyModifier)propertyPointerType  propertyName;                                                 \
-- (className * (^) (propertyPointerType propertyName)) propertyName##Set;
-
-#define WMZPropSetFuncImplementation(className, propertyPointerType, propertyName)                                       \
-- (className * (^) (propertyPointerType propertyName))propertyName##Set{                                                \
-return ^(propertyPointerType propertyName) {                                                                            \
-_##propertyName = propertyName;                                                                                         \
-return self;                                                                                                            \
-};                                                                                                                      \
-}
 /*
  * 布局
  */

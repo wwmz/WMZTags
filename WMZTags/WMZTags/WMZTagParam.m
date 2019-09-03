@@ -67,7 +67,7 @@ WMZPropSetFuncImplementation(WMZTagParam, NSString*,        selectImageName)
         _wInnerColor = MInnerColor;
         _imagePosition = TagImagePositionRight;
         _wBoderColor = MBoderColor;
-        _wBackGroundColor = [WMZTool stringTOColor:@"#666666"];
+        _wBackGroundColor = [WMZTagsTool stringTOColor:@"#666666"];
         _wBoderWidth = 1;
         _wRadius = 5;
         _wInsertPlaceholder = MInsertPlaceholder;

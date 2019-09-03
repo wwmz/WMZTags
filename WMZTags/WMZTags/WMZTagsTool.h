@@ -1,16 +1,15 @@
 //
-//  WMZTool.h
+//  WMZTagsTool.h
 //  WMZTags
 //
-//  Created by wmz on 2019/5/27.
-//  Copyright © 2019年 wmz. All rights reserved.
+//  Created by wmz on 2019/9/3.
+//  Copyright © 2019 wmz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "Masonry.h"
+#import "HeaderFiles.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WMZTool : NSObject
+@interface WMZTagsTool : NSObject
 //文字转图片
 + (UIImage *)imageWithString:(NSString *)string
                         font:(UIFont *)font
