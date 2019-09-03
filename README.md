@@ -3,6 +3,11 @@
 # 看下效果图
 ![Untitled.gif](https://upload-images.jianshu.io/upload_images/9163368-cd494a9b677ea592.gif?imageMogr2/auto-orient/strip)
 
+引入
+pod 'WMZTags' 
+或者直接拉WMZTags文件夹进入项目
+
+
 使用说明（简单使用,支持frame布局和masonry布局）
 
 ```
