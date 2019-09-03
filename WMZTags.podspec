@@ -15,5 +15,4 @@ Pod::Spec.new do |s|
   s.source_files = "WMZTags/WMZTags/**/*.{h,m}"
   s.framework = 'UIKit'
   s.dependency 'Masonry'
-  s.public_header_files = "WMZTags/WMZTags/**/HeaderFiles.h"
 end
