@@ -5,6 +5,7 @@
 
 ## 引入
 pod 'WMZTags','~>1.0.0'      或者直接拉WMZTags文件夹进入项目
+## 在使用cocoapods安装时，请先执行 pod search WMZTags，如果搜索不到，请执行pod setup命令。
 ## 注:要消除链式编程的警告 
 要在Buildding Settings 把CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF 设为NO
 
