@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,20 +21,13 @@
 		187C9E8F229E761C000C7436 /* tagFourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E8E229E761C000C7436 /* tagFourCell.m */; };
 		187C9E92229E7627000C7436 /* tagFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E91229E7627000C7436 /* tagFiveCell.m */; };
 		187C9E95229E7645000C7436 /* tagUseTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C9E94229E7645000C7436 /* tagUseTableViewVC.m */; };
+		1D7F9C62A780910DAE6D3394 /* Pods_WMZTagsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E85167F4A937898B5D70F /* Pods_WMZTagsUITests.framework */; };
+		CD8E93761F8DDA1DE4225304 /* Pods_WMZTagsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8F2D8D42191A11FE02C157 /* Pods_WMZTagsTests.framework */; };
+		F0BE9DEABB46A81478DEAFCB /* Pods_WMZTags.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418AB7C10CACD6B07BEF0CC2 /* Pods_WMZTags.framework */; };
 		F32090F3231E314900460E25 /* WMZTagParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F32090EA231E314900460E25 /* WMZTagParam.m */; };
 		F32090F4231E314900460E25 /* WMZTagBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = F32090EE231E314900460E25 /* WMZTagBtn.m */; };
 		F32090F6231E314900460E25 /* WMZTags.m in Sources */ = {isa = PBXBuildFile; fileRef = F32090F0231E314900460E25 /* WMZTags.m */; };
 		F32090F7231E314900460E25 /* WMZTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F32090F2231E314900460E25 /* WMZTagCell.m */; };
-		F3209112231E31AF00460E25 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F32090FA231E31AF00460E25 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		F3209113231E31AF00460E25 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3209103231E31AF00460E25 /* ViewController+MASAdditions.m */; };
-		F3209114231E31AF00460E25 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F3209107231E31AF00460E25 /* MASCompositeConstraint.m */; };
-		F3209115231E31AF00460E25 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F3209108231E31AF00460E25 /* MASConstraintMaker.m */; };
-		F3209116231E31AF00460E25 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F3209109231E31AF00460E25 /* MASLayoutConstraint.m */; };
-		F3209117231E31AF00460E25 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F320910A231E31AF00460E25 /* NSArray+MASAdditions.m */; };
-		F3209118231E31AF00460E25 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F320910B231E31AF00460E25 /* View+MASAdditions.m */; };
-		F3209119231E31AF00460E25 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F320910E231E31AF00460E25 /* MASConstraint.m */; };
-		F320911A231E31AF00460E25 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F3209110231E31AF00460E25 /* MASViewConstraint.m */; };
-		F320911B231E31AF00460E25 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = F3209111231E31AF00460E25 /* MASViewAttribute.m */; };
 		F3209120231E418B00460E25 /* WMZTagsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F320911F231E418B00460E25 /* WMZTagsTool.m */; };
 		F3437C082313D17E002EBA95 /* tagZeroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3437C072313D17E002EBA95 /* tagZeroCell.m */; };
 /* End PBXBuildFile section */
@@ -57,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14B7BD6A04E230541B7AA603 /* Pods-WMZTagsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTagsTests.debug.xcconfig"; path = "Target Support Files/Pods-WMZTagsTests/Pods-WMZTagsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		153862AD3AD62054B4A81B8D /* Pods-WMZTags.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTags.debug.xcconfig"; path = "Target Support Files/Pods-WMZTags/Pods-WMZTags.debug.xcconfig"; sourceTree = "<group>"; };
 		186244732296979600584406 /* WMZTags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMZTags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186244762296979600584406 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		186244772296979600584406 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,6 +80,12 @@
 		187C9E91229E7627000C7436 /* tagFiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagFiveCell.m; sourceTree = "<group>"; };
 		187C9E93229E7645000C7436 /* tagUseTableViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagUseTableViewVC.h; sourceTree = "<group>"; };
 		187C9E94229E7645000C7436 /* tagUseTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagUseTableViewVC.m; sourceTree = "<group>"; };
+		418AB7C10CACD6B07BEF0CC2 /* Pods_WMZTags.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMZTags.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B60AB34792D1585833540F /* Pods-WMZTags.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTags.release.xcconfig"; path = "Target Support Files/Pods-WMZTags/Pods-WMZTags.release.xcconfig"; sourceTree = "<group>"; };
+		9A2E85167F4A937898B5D70F /* Pods_WMZTagsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMZTagsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6C1AAA65232C4E9B65B37E /* Pods-WMZTagsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTagsUITests.debug.xcconfig"; path = "Target Support Files/Pods-WMZTagsUITests/Pods-WMZTagsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFFAC74A1CFABE5B0FE64CDD /* Pods-WMZTagsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTagsUITests.release.xcconfig"; path = "Target Support Files/Pods-WMZTagsUITests/Pods-WMZTagsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC8F2D8D42191A11FE02C157 /* Pods_WMZTagsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMZTagsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32090E9231E314900460E25 /* WMZTagBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZTagBtn.h; sourceTree = "<group>"; };
 		F32090EA231E314900460E25 /* WMZTagParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTagParam.m; sourceTree = "<group>"; };
 		F32090EB231E314900460E25 /* WMZTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZTagCell.h; sourceTree = "<group>"; };
@@ -93,36 +94,12 @@
 		F32090F0231E314900460E25 /* WMZTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTags.m; sourceTree = "<group>"; };
 		F32090F1231E314900460E25 /* WMZTagParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZTagParam.h; sourceTree = "<group>"; };
 		F32090F2231E314900460E25 /* WMZTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTagCell.m; sourceTree = "<group>"; };
-		F32090F9231E31AF00460E25 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		F32090FA231E31AF00460E25 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		F32090FB231E31AF00460E25 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		F32090FC231E31AF00460E25 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		F32090FD231E31AF00460E25 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		F32090FE231E31AF00460E25 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		F32090FF231E31AF00460E25 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		F3209100231E31AF00460E25 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		F3209101231E31AF00460E25 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		F3209102231E31AF00460E25 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		F3209103231E31AF00460E25 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		F3209104231E31AF00460E25 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		F3209105231E31AF00460E25 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		F3209106231E31AF00460E25 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		F3209107231E31AF00460E25 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		F3209108231E31AF00460E25 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		F3209109231E31AF00460E25 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		F320910A231E31AF00460E25 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		F320910B231E31AF00460E25 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		F320910C231E31AF00460E25 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		F320910D231E31AF00460E25 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		F320910E231E31AF00460E25 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		F320910F231E31AF00460E25 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		F3209110231E31AF00460E25 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		F3209111231E31AF00460E25 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		F320911D231E3C4800460E25 /* HeaderFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFiles.h; sourceTree = "<group>"; };
 		F320911E231E418B00460E25 /* WMZTagsTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTagsTool.h; sourceTree = "<group>"; };
 		F320911F231E418B00460E25 /* WMZTagsTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTagsTool.m; sourceTree = "<group>"; };
 		F3437C062313D17E002EBA95 /* tagZeroCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagZeroCell.h; sourceTree = "<group>"; };
 		F3437C072313D17E002EBA95 /* tagZeroCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagZeroCell.m; sourceTree = "<group>"; };
+		F9B3992121A2B6F929B025D4 /* Pods-WMZTagsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMZTagsTests.release.xcconfig"; path = "Target Support Files/Pods-WMZTagsTests/Pods-WMZTagsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BE9DEABB46A81478DEAFCB /* Pods_WMZTags.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8E93761F8DDA1DE4225304 /* Pods_WMZTagsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7F9C62A780910DAE6D3394 /* Pods_WMZTagsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +137,8 @@
 				1862448E2296979E00584406 /* WMZTagsTests */,
 				186244992296979E00584406 /* WMZTagsUITests */,
 				186244742296979600584406 /* Products */,
+				B68EDEA58851B03C2AA8EB12 /* Pods */,
+				3FFA43515BC003FC647DAC13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,7 +155,6 @@
 		186244752296979600584406 /* WMZTags */ = {
 			isa = PBXGroup;
 			children = (
-				F32090F8231E31AF00460E25 /* Masonry */,
 				F32090E8231E314900460E25 /* WMZTags */,
 				186244762296979600584406 /* AppDelegate.h */,
 				186244772296979600584406 /* AppDelegate.m */,
@@ -220,6 +201,29 @@
 			path = WMZTagsUITests;
 			sourceTree = "<group>";
 		};
+		3FFA43515BC003FC647DAC13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				418AB7C10CACD6B07BEF0CC2 /* Pods_WMZTags.framework */,
+				DC8F2D8D42191A11FE02C157 /* Pods_WMZTagsTests.framework */,
+				9A2E85167F4A937898B5D70F /* Pods_WMZTagsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B68EDEA58851B03C2AA8EB12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				153862AD3AD62054B4A81B8D /* Pods-WMZTags.debug.xcconfig */,
+				83B60AB34792D1585833540F /* Pods-WMZTags.release.xcconfig */,
+				14B7BD6A04E230541B7AA603 /* Pods-WMZTagsTests.debug.xcconfig */,
+				F9B3992121A2B6F929B025D4 /* Pods-WMZTagsTests.release.xcconfig */,
+				AD6C1AAA65232C4E9B65B37E /* Pods-WMZTagsUITests.debug.xcconfig */,
+				CFFAC74A1CFABE5B0FE64CDD /* Pods-WMZTagsUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F32090E8231E314900460E25 /* WMZTags */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,38 +242,6 @@
 			path = WMZTags;
 			sourceTree = "<group>";
 		};
-		F32090F8231E31AF00460E25 /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				F32090F9231E31AF00460E25 /* MASCompositeConstraint.h */,
-				F32090FA231E31AF00460E25 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				F32090FB231E31AF00460E25 /* MASConstraint+Private.h */,
-				F32090FC231E31AF00460E25 /* MASLayoutConstraint.h */,
-				F32090FD231E31AF00460E25 /* NSArray+MASShorthandAdditions.h */,
-				F32090FE231E31AF00460E25 /* MASConstraintMaker.h */,
-				F32090FF231E31AF00460E25 /* View+MASAdditions.h */,
-				F3209100231E31AF00460E25 /* NSArray+MASAdditions.h */,
-				F3209101231E31AF00460E25 /* MASUtilities.h */,
-				F3209102231E31AF00460E25 /* MASViewAttribute.h */,
-				F3209103231E31AF00460E25 /* ViewController+MASAdditions.m */,
-				F3209104231E31AF00460E25 /* MASViewConstraint.h */,
-				F3209105231E31AF00460E25 /* MASConstraint.h */,
-				F3209106231E31AF00460E25 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				F3209107231E31AF00460E25 /* MASCompositeConstraint.m */,
-				F3209108231E31AF00460E25 /* MASConstraintMaker.m */,
-				F3209109231E31AF00460E25 /* MASLayoutConstraint.m */,
-				F320910A231E31AF00460E25 /* NSArray+MASAdditions.m */,
-				F320910B231E31AF00460E25 /* View+MASAdditions.m */,
-				F320910C231E31AF00460E25 /* View+MASShorthandAdditions.h */,
-				F320910D231E31AF00460E25 /* Masonry.h */,
-				F320910E231E31AF00460E25 /* MASConstraint.m */,
-				F320910F231E31AF00460E25 /* ViewController+MASAdditions.h */,
-				F3209110231E31AF00460E25 /* MASViewConstraint.m */,
-				F3209111231E31AF00460E25 /* MASViewAttribute.m */,
-			);
-			path = Masonry;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1862449F2296979E00584406 /* Build configuration list for PBXNativeTarget "WMZTags" */;
 			buildPhases = (
+				F4524AE8F1914C9E3C397057 /* [CP] Check Pods Manifest.lock */,
 				1862446F2296979600584406 /* Sources */,
 				186244702296979600584406 /* Frameworks */,
 				186244712296979600584406 /* Resources */,
+				F7FBE0903C73CDB60A6EEE75 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -442,6 +416,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F4524AE8F1914C9E3C397057 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WMZTags-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7FBE0903C73CDB60A6EEE75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WMZTags/Pods-WMZTags-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WMZTags/Pods-WMZTags-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WMZTags/Pods-WMZTags-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -453,25 +466,15 @@
 				F3437C082313D17E002EBA95 /* tagZeroCell.m in Sources */,
 				187C9E95229E7645000C7436 /* tagUseTableViewVC.m in Sources */,
 				187C9E89229E7605000C7436 /* tagTwoCell.m in Sources */,
-				F3209114231E31AF00460E25 /* MASCompositeConstraint.m in Sources */,
 				F32090F4231E314900460E25 /* WMZTagBtn.m in Sources */,
-				F3209119231E31AF00460E25 /* MASConstraint.m in Sources */,
-				F3209118231E31AF00460E25 /* View+MASAdditions.m in Sources */,
 				1862447B2296979600584406 /* ViewController.m in Sources */,
 				187C9E8F229E761C000C7436 /* tagFourCell.m in Sources */,
-				F320911B231E31AF00460E25 /* MASViewAttribute.m in Sources */,
-				F3209112231E31AF00460E25 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				186244862296979E00584406 /* main.m in Sources */,
 				F32090F3231E314900460E25 /* WMZTagParam.m in Sources */,
-				F3209116231E31AF00460E25 /* MASLayoutConstraint.m in Sources */,
-				F320911A231E31AF00460E25 /* MASViewConstraint.m in Sources */,
 				F32090F7231E314900460E25 /* WMZTagCell.m in Sources */,
-				F3209117231E31AF00460E25 /* NSArray+MASAdditions.m in Sources */,
 				187C9E8C229E760F000C7436 /* tagThreeCell.m in Sources */,
-				F3209115231E31AF00460E25 /* MASConstraintMaker.m in Sources */,
 				F32090F6231E314900460E25 /* WMZTags.m in Sources */,
 				187C9E86229E75F6000C7436 /* tagOneCell.m in Sources */,
-				F3209113231E31AF00460E25 /* ViewController+MASAdditions.m in Sources */,
 				186244782296979600584406 /* AppDelegate.m in Sources */,
 				F3209120231E418B00460E25 /* WMZTagsTool.m in Sources */,
 			);
@@ -642,6 +645,7 @@
 		};
 		186244A02296979E00584406 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153862AD3AD62054B4A81B8D /* Pods-WMZTags.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
@@ -660,6 +664,7 @@
 		};
 		186244A12296979E00584406 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B60AB34792D1585833540F /* Pods-WMZTags.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
@@ -678,6 +683,7 @@
 		};
 		186244A32296979E00584406 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B7BD6A04E230541B7AA603 /* Pods-WMZTagsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -697,6 +703,7 @@
 		};
 		186244A42296979E00584406 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B3992121A2B6F929B025D4 /* Pods-WMZTagsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -716,6 +723,7 @@
 		};
 		186244A62296979E00584406 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD6C1AAA65232C4E9B65B37E /* Pods-WMZTagsUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HR6T4LQD9T;
@@ -734,6 +742,7 @@
 		};
 		186244A72296979E00584406 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFFAC74A1CFABE5B0FE64CDD /* Pods-WMZTagsUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HR6T4LQD9T;
