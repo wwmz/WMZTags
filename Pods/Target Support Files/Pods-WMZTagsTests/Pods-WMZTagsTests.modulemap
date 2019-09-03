@@ -1,6 +1,0 @@
-framework module Pods_WMZTagsTests {
-  umbrella header "Pods-WMZTagsTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
