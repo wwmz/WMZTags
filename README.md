@@ -4,7 +4,7 @@
 ![Untitled.gif](https://upload-images.jianshu.io/upload_images/9163368-cd494a9b677ea592.gif?imageMogr2/auto-orient/strip)
 
 ## 引入
-pod 'WMZTags'       或者直接拉WMZTags文件夹进入项目
+pod 'WMZTags' ~>1.0.0       或者直接拉WMZTags文件夹进入项目
 ## 注:要消除链式编程的警告 
 要在Buildding Settings 把CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF 设为NO
 
