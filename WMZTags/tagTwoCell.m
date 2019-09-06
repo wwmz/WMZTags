@@ -34,8 +34,9 @@
 }
 
 - (void)setModel:(NSArray *)model{
-    [super setModel:model];
-    self.param.wDataSet(model);
+    [super setModel:model];      //默认选中 位于数组中的下标
+    self.param.wDataSet(model).wSelectIndexDataSet(@[@(1),@(3),@(5)])
+    ;
     [self.myTag updateUI];
     
 }

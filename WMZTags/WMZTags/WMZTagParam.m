@@ -18,7 +18,6 @@ WMZPropSetFuncImplementation(WMZTagParam, NSString*,        wInsertPlaceholder)
 WMZPropSetFuncImplementation(WMZTagParam, Boolean,          wSelectOne)
 WMZPropSetFuncImplementation(WMZTagParam, Boolean,          wSelectMore)
 WMZPropSetFuncImplementation(WMZTagParam, TagAlign,         wTagAlign)
-WMZPropSetFuncImplementation(WMZTagParam, Boolean ,         wDisableTransitions)
 WMZPropSetFuncImplementation(WMZTagParam, Boolean ,         wHit)
 WMZPropSetFuncImplementation(WMZTagParam, Boolean,          wLineaBle)
 WMZPropSetFuncImplementation(WMZTagParam, NSInteger,        wLineNum)
@@ -33,6 +32,7 @@ WMZPropSetFuncImplementation(WMZTagParam, UIColor*,         wSelectColor)
 WMZPropSetFuncImplementation(WMZTagParam, UIColor* ,        wBackGroundColor)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat ,         wFont)
 WMZPropSetFuncImplementation(WMZTagParam, NSArray*,         wData)
+WMZPropSetFuncImplementation(WMZTagParam, NSArray*,         wSelectIndexData)
 WMZPropSetFuncImplementation(WMZTagParam, TagSizeType ,     wSize)
 WMZPropSetFuncImplementation(WMZTagParam, CGRect,           wFrame)
 WMZPropSetFuncImplementation(WMZTagParam, TagConstraint,    wMasonry)
@@ -78,11 +78,19 @@ WMZPropSetFuncImplementation(WMZTagParam, NSString*,        selectImageName)
     return self;
 }
 
+
 - (NSMutableArray *)selectBtnArr{
     if (!_selectBtnArr) {
         _selectBtnArr = [NSMutableArray new];
     }
     return _selectBtnArr;
+}
+
+- (NSMutableArray *)cancelSelectDefaultBtnArr{
+    if (!_cancelSelectDefaultBtnArr) {
+        _cancelSelectDefaultBtnArr = [NSMutableArray new];
+    }
+    return _cancelSelectDefaultBtnArr;
 }
 
 WMZTagParam * TagParam(void){

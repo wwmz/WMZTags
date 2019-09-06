@@ -88,6 +88,7 @@ typedef enum :NSInteger{
  wFrame              frame布局        CGRect                       —                   -            是（和maronsy二选一）
  wMasonry            masonry布局      TagConstraint                —                   -            是（和wFrame二选一）
  wData               数据源            NSArray                     —                    -           是
+ wSelectIndexData    默认选中的数据源(传下标)NSArray                  —                    -           是
  wType               主题             TagColorType    success/info/warning/danger      —            否
  wInsertaBle         是否可增加        Boolean                     _                  false          否
  wClosable           是否可删除        Boolean                     —                  false          否
@@ -130,7 +131,6 @@ WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           
 WMZPropStatementAndPropSetFuncStatement(copy,   WMZTagParam, NSString*,         wInsertPlaceholder)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wSelectOne)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wSelectMore)
-WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wDisableTransitions)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wHit)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wLineaBle)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, TagAlign,          wTagAlign)
@@ -138,6 +138,7 @@ WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           wRadius)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wBoderColor)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, NSArray*,          wData)
+WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, NSArray*,          wSelectIndexData)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wInnerColor)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wColor)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wSelectBoderColor)
@@ -168,8 +169,9 @@ WMZPropStatementAndPropSetFuncStatement(copy,   WMZTagParam, NSString*,         
 /* =========================================Attributes==========================================*/
 
 /* =========================================myProperty==========================================*/
-@property(nonatomic,strong)NSMutableArray *selectBtnArr;
+@property(nonatomic,strong,nullable)NSMutableArray *selectBtnArr;
 @property(nonatomic,strong)NSIndexPath *path;
+@property(nonatomic,strong)NSMutableArray *cancelSelectDefaultBtnArr;
 /* =========================================myProperty==========================================*/
 
 /* =========================================Events==============================================*/

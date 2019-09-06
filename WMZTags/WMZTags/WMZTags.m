@@ -72,7 +72,7 @@
     }
 
     //没有数据
-    if (!self.param.wData.count&&![self.superview isKindOfClass:[UITableViewCell class]]) {
+    if (!self.param.wData.count) {
         if (self.param.wMasonry) {
             [self mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.height.mas_equalTo(0).priorityHigh();
@@ -83,6 +83,26 @@
             rect.size.height = 0;
             self.frame = rect;
         }
+    }
+    
+    //处理默认选中的逻辑
+    if (self.param.wSelectIndexData&&self.param.selectBtnArr.count==0) {
+        NSMutableArray *temp = [NSMutableArray new];
+        for (id num in self.param.wSelectIndexData) {
+            if ([num isKindOfClass:[NSNumber class]]||[num isKindOfClass:[NSString class]]) {
+                [temp addObject:@([num integerValue]+100)];
+            }
+        }
+        if (self.param.cancelSelectDefaultBtnArr.count) {
+            for (id num in self.param.cancelSelectDefaultBtnArr) {
+                if ([num isKindOfClass:[NSNumber class]]||[num isKindOfClass:[NSString class]]) {
+                    if ([temp indexOfObject:@([num integerValue])]!=NSNotFound) {
+                        [temp removeObject:@([num integerValue])];
+                    };
+                }
+            }
+        }
+        self.param.selectBtnArr =  [NSMutableArray arrayWithArray:temp];
     }
 
     allWidth = 0;     //整体长度
@@ -208,8 +228,9 @@
         [self.btnArr addObject:btn];
     }
     
-    if (self.param.selectBtnArr.count) {
-        if ([self.param.selectBtnArr indexOfObject:[NSString stringWithFormat:@"%@-%ld",btn.titleLabel.text,btn.tag]]!=NSNotFound) {
+
+    if (self.param.selectBtnArr&&self.param.selectBtnArr.count) {
+        if ([self.param.selectBtnArr indexOfObject:@(btn.tag)]!=NSNotFound) {
             btn.selected = YES;
             [btn setUpBtnStyle];
         }else{
@@ -217,6 +238,7 @@
             [btn setUpBtnStyle];
         }
     }
+    
 
 }
 
@@ -269,16 +291,13 @@
         for (WMZTagBtn *btn in self.btnArr) {
             if (btn == sender) {
                 btn.selected = !btn.selected;
+                [self dealDefaultSelect:btn];
             }else{
                 btn.selected = NO;
             }
             [btn setUpBtnStyle];
-            if ([btn isSelected]) {
-                [self.param.selectBtnArr addObject:[NSString stringWithFormat:@"%@-%ld",btn.titleLabel.text,btn.tag]];
-            }
-
-            
         }
+        
         if (self.param.tapClick) {
             self.param.tapClick(index, sender.titleLabel.text,sender.selected);
         }
@@ -287,17 +306,18 @@
     //多点
     if (self.param.wSelectMore) {
         sender.selected = !sender.selected;
-        [sender setUpBtnStyle];
         if (self.param.tagMoreClick) {
+            [self dealDefaultSelect:sender];
             NSMutableArray *indexArr = [NSMutableArray new];
             NSMutableArray *modelArr = [NSMutableArray new];
-            self.param.selectBtnArr = [NSMutableArray new];
+            self.param.selectBtnArr = nil;
             for (WMZTagBtn *btn in self.btnArr) {
                 if (btn.selected == YES) {
-                    [indexArr addObject:@(btn.tag - 100)];
+                    [indexArr addObject:@(btn.tag)];
                     [modelArr addObject:btn.titleLabel.text];
-                    [self.param.selectBtnArr addObject:[NSString stringWithFormat:@"%@-%ld",btn.titleLabel.text,btn.tag]];
+                    [self.param.selectBtnArr addObject:@(btn.tag)];
                 }
+                [btn setUpBtnStyle];
             }
             self.param.tagMoreClick(indexArr,modelArr);
         }
@@ -332,6 +352,23 @@
     }
 }
 
+//处理默认选中的逻辑
+- (void)dealDefaultSelect:(WMZTagBtn*)sender{
+    if (![sender isSelected]) {
+        for (id num in self.param.wSelectIndexData) {
+            if ([num isKindOfClass:[NSNumber class]]||[num isKindOfClass:[NSString class]]) {
+                if ([self.param.cancelSelectDefaultBtnArr indexOfObject:@([num integerValue]+100)]==NSNotFound) {
+                    [self.param.cancelSelectDefaultBtnArr addObject:@([num integerValue]+100)];
+                };
+            }
+        }
+    }else{
+        [self.param.selectBtnArr addObject:@(sender.tag)];
+        if (self.param.wSelectIndexData&& [self.param.cancelSelectDefaultBtnArr indexOfObject:@(sender.tag)]!=NSNotFound) {
+            [self.param.cancelSelectDefaultBtnArr removeObject:@(sender.tag)];
+        }
+    }
+}
 
 - (NSMutableArray *)btnArr{
     if (!_btnArr) {

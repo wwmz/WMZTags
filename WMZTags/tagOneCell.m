@@ -23,7 +23,7 @@
         .wTagAlignSet(TagAlignRight)
         .wTapClick(^(NSInteger index, id  _Nonnull model, BOOL isSelected) {
             NSLog(@"单点的点击回调 %ld %@  %@",index,model,isSelected?@"选中":@"取消选中");
-        })
+        }) 
          .imageNameSet(@"notCheck").selectImageNameSet(@"check").wTypeSet(success)
         .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
             make.top.left.bottom.mas_equalTo(0);
