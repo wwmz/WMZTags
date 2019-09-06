@@ -104,3 +104,12 @@ pod 'WMZTags','~>1.0.0'      或者直接拉WMZTags文件夹进入项目
         [self presentViewController:alerVC animated:YES completion:nil];
     }}   ;
 ```
+
+
+# 20190731
+加了对齐方式  
+wTagAlign属性  枚举TagAlignLeft/TagAlignRight 分别为左对齐和右对齐 默认左对齐
+![D6D8414E-093F-4B15-AD77-083013A7B260.png](https://upload-images.jianshu.io/upload_images/9163368-c6b55ee93a3a75b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+wSelectIndexData属性   默认选中数据 传wData数据中的想默认选中的位于数组中的下标
+如 .wSelectIndexDataSet(@[@(1),@(3),@(5)]) 即第2 第4 第6默认选中 下标从0开始
