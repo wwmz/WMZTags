@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 //用于外部刷新
 -(void)updateCell:(id)cell data:(NSArray*)data;
 @end
+
 @interface WMZTagCell : UITableViewCell
 //数据
 @property(nonatomic,strong)NSArray *model;
