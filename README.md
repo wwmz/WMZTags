@@ -1,115 +1,175 @@
-# WMZTags
-# 功能齐全采用链式编程
-# 看下效果图
-![Untitled.gif](https://upload-images.jianshu.io/upload_images/9163368-cd494a9b677ea592.gif?imageMogr2/auto-orient/strip)
+# WMZBanner - 仿前端element-UI框架的标签
 
-## 引入
-pod 'WMZTags','~>1.0.0'      或者直接拉WMZTags文件夹进入项目
-## 在使用cocoapods安装时，请先执行 pod search WMZTags，如果搜索不到，请执行pod setup命令。
-## 注:要消除链式编程的警告 
-要在Buildding Settings 把CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF 设为NO
+演示
+==============
+![Tags.gif](https://upload-images.jianshu.io/upload_images/9163368-d63961ad20d96c0e.gif?imageMogr2/auto-orient/strip)
 
-
-## 使用说明（简单使用,支持frame布局和masonry布局）
-
-```
- //frame使用
-  WMZTagParam *model = TagParam()
-  .wDataSet(@[@"标签一",@"标签二",@"标签三",@"标签四",@"标签五",@"标签六"])
-  .wParentViewSet(self.scrollView)
-  .wFrameSet(CGRectMake(10, 10, 310, 0))
-  WMZTags *tag1 = [[WMZTags alloc]initConfigureWithModel:model];
-```
-
-```
- //masonry使用
-  WMZTagParam *model = TagParam()
-  .wDataSet(@[@"标签一",@"标签二",@"标签三",@"标签四",@"标签五",@"标签六"])
-  .wParentViewSet(self.scrollView)
-  .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
-        make.left.mas_equalTo(10);
-        make.top.mas_equalTo(CGRectGetMaxY(tag1.frame)+30);
-        make.width.mas_equalTo(350);
-  });
-  WMZTags *tag1 = [[WMZTags alloc]initConfigureWithModel:model];
-```
-
-* * *
-## 其他用法参数说明
-![87A7F1EE-0566-4011-BA5C-022BD159F9FA.png](https://upload-images.jianshu.io/upload_images/9163368-3cbd369851830966.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+特性
+==============
+- 链式语法 结构优雅
+- 所有属性(颜色,字体,宽度,高度,圆角等)样式均可自定义、
+-  支持增加
+-  支持删除
+-  支持单点选中
+-  支持多点选中
+-  支持默认选中
+-  支持左/右对齐
+-  默认多个size可选
+-  默认多个风格可选
 
 
-## 实际使用
-```
-     TagParam()
-    .imageNameSet(@"notCheck")                                                         //未选择的图片
-    .selectImageNameSet(@"check")                                                      //选择的图片
-    .wHitSet(YES)                                                                      //开启边框描边
-    .wRadiusSet(10)                                                                    //圆角
-    .wBoderWidthSet(1)                                                                 //边框宽度
-    .wBoderColorSet([UIColor cyanColor])                                               //边框颜色
-    .textImageNameSet(@"🐶")                                                           //未选择的文字图片（优先级高于纯图片）
-    .selecTextImageNameSet(@"🐱")                                                      //选择的文字图片
-    .wSelectMoreSet(YES)                                                               //开启多选
-    .wInsertaBleSet(YES)                                                               //开启新增标签
-    .wSelectOneSet(YES)                                                                //开启单选
-    .wClosableSet(YES)                                                                 //开启关闭
-    .wLineaBleSet(YES)                                                                 //开启标签换行
-    .wLineNumSet(0)                                                                    //设置标签最大行数
-    .wTypeSet(danger)                                                                  //设置主题
-    .wSizeSet(small)                                                                   //设置标签大小
-    .imagePositionSet(TagImagePositionLeft)                                            //设置图文的位置
-    .wBackGroundColorSet([WMZTool stringTOColor:@"#999999"])                           //设置整个的背景颜色
-    .wSelectBoderColorSet([UIColor redColor])                                          //设置标签选中时的边框颜色
-    .wSelectInnerColorSet([UIColor redColor])                                          //设置标签选中时的标签的背景颜色                                    
-    .wSelectColorSet([UIColor redColor])                                               //设置标签选中时的文字颜色
-    .marginTopSet(10)                                                                  //外上边距
-    .marginBottomSet(10)                                                               //外下边距
-    .marginLeftSet(10)                                                                 //外左边距
-    .marginRightSet(10)                                                                //外右边距
-    .paddingTopSet(20)                                                                 //内上边距
-    .paddingLeftSet(20)                                                                //内左边距
-    .btnTopSet(30)                                                                     //标签的左边距
-    .btnLeftSet(30)                                                                    //标签的上边距
-    .btnPaddingLeftSet(5)                                                              //标签图文的间距
+用法
+==============
+
+### 简单调用只显示
+    WMZTagParam *model = 
+    TagParam()
+    .wDataSet(@[])
+    .wFrameSet(CGRectMake(10, 10, 310, 0));
+    WMZTags *tag1 = [[WMZTags alloc]initConfigureWithModel:model  withView:self.scrollView];
+
+
+### 单选
+	
+    TagParam()
+    .wDataSet(@[@"1",@"2"])
+    .wSelectOneSet(YES)
+    .wTapClick(^(NSInteger index, id  _Nonnull model, BOOL isSelected) {
+          NSLog(@"单点的点击回调 %ld %@  %@",index,model,isSelected?@"选中":@"取消选中");
+    }) 
+    .imageNameSet(@"notCheck")
+    .selectImageNameSet(@"check").wTypeSet(success)
     .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
-        make.left.mas_equalTo(10);
-        make.top.mas_equalTo(CGRectGetMaxY(tag1.frame)+30);
-        make.width.mas_equalTo(350);
+          make.top.left.bottom.mas_equalTo(0);
+          make.width.mas_equalTo(TagWitdh);
+    });
+    
+##### 多选
+
+    TagParam()
+    .wSelectMoreSet(YES)
+    .textImageNameSet(@"💖")
+    .selecTextImageNameSet(@"❤️")
+    .imagePositionSet(TagImagePositionLeft).wTypeSet(info)
+    .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
+         make.top.left.bottom.mas_equalTo(0);
+         make.width.mas_equalTo(TagWitdh);
     })
     .wMoreTapClick(^(NSArray * _Nonnull indexArr, NSArray * _Nonnull modelArr) {
-        NSLog(@"多点方法 ： %@, %@",indexArr,modelArr);
+        NSLog(@"多点的点击回调 %@ %@",indexArr,modelArr);
+    });
+    
+##### 删除
+
+    TagParam()
+    .wCloseClick(^(NSInteger index, id  _Nonnull model,NSArray * _Nonnull modelArr) {
+        NSLog(@"删除的回调 %ld %@ %@",index,model,modelArr);
+     })
+     .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
+        make.top.left.bottom.mas_equalTo(0);
+        make.width.mas_equalTo(TagWitdh);
     })
-    .wTapClick(^(NSInteger index, id  _Nonnull model, BOOL isSelected) {
-        NSLog(@"单点方法 ： %ld, %@, %d",index,model,isSelected);
+    .wClosableSet(YES)
+    .wTypeSet(warning);
+    
+##### 增加
+    TagParam()
+     .wInsertTextClick(^(NSString * _Nonnull text, NSArray * _Nonnull modelArr) {
+         NSLog(@"新增回调");
+     })
+    .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
+         make.top.left.bottom.mas_equalTo(0);
+         make.width.mas_equalTo(TagWitdh);
     })
-    .wCloseClick(^(NSInteger index, id  _Nonnull model, NSArray * _Nonnull modelArr) {
-        NSLog(@"关闭方法 ： %ld, %@   %@",index,model,modelArr);
-        [weakSelf update];
-    })
-    .wInsertTextClick(^(NSString * _Nonnull text, NSArray * _Nonnull modelArr) {
-        NSLog(@"添加的回调 %@ %@",text,modelArr);
-        [weakSelf update];
-    })
-    .wInsertClick(^(NSInteger index, id  _Nonnull model, InsertTextBlock  _Nonnull block) {
-        NSLog(@"自定义添加的事件");
-        UIAlertController *alerVC = [UIAlertController alertControllerWithTitle:@"增加标签" message:nil preferredStyle:UIAlertControllerStyleAlert];
-        [alerVC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        }];
-        
-        [alerVC addAction:[UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDestructive) handler:^(UIAlertAction * _Nonnull action) {
-            UITextField *textfield1 = alerVC.textFields[0];
-            block(textfield1.text);
-        }]];
-        [self presentViewController:alerVC animated:YES completion:nil];
-    }}   ;
-```
+    .wInsertaBleSet(YES);
+    
+##### 刷新
+    .wDataSet(@[])后
+    直接调用实例方法updateUI
+    [[WMZTags new] updateUI]
+    
+##### 数据变化后tableview的刷新
+    tableviewCell的WMZTagDelegate代理方法
+    //用于外部刷新 
+    -(void)updateCell:(id)cell data:(NSArray*)data;
+    要在tableview上使用需要继承WMZTagCell 可以看demo
+
+##### 其他可配置的全部参数说明
+    参数                 说明              类型                      可选值                默认值        是否必传
+    wFrame              frame布局         CGRect                       —                   -            是（和maronsy二选一）
+    wMasonry            masonry布局       TagConstraint                —                   -            是（和wFrame二选一）
+    wData               数据源             NSArray                     —                    -            是
+    wSelectIndexData    默认选中的数据源(传下标)NSArray                  —                    -            是
+    wType               主题              TagColorType    success/info/warning/danger      —            否
+    wInsertaBle         是否可增加         Boolean                     _                  false          否
+    wClosable           是否可删除         Boolean                     —                  false          否
+    wSelectOne          是否可单选         Boolean                     —                  false          否
+    wSelectMore         是否可多选         Boolean                     —                  false          否
+    wTagAlign           标签对齐模式       TagAlign       TagAlignLeft/TagAlignRight   TagAlignLeft       否
+    wHit                是否有边框描边      Boolean                     —                  false          否
+    wRadius             圆角              CGFloat                     —              5(最大为高度的一半)   否
+    wBoderWidth         边框宽度           CGFloat                     _                    1            否
+    wBoderColor         边框颜色           UIColor                     —                  #5297E1        否
+    wColor              字体颜色           UIColor                     —                  #5297E1        否
+    wBackGroundColor    外部背景色         UIColor                     —                  #ffffff        否
+    wInnerColor         内部背景色         UIColor                     —                  #CEE1F7        否
+    wSelectBoderColor   选中边框颜色        UIColor                     —                   #ED4985       否
+    wSelectColor        选中字体颜色        UIColor                     —                   #ED4985       否
+    wSelectInnerColor   选中内部背景色      UIColor                      —                  #F4C4C4       否
+    wSize               尺寸              TagSizeType        medium / small / mini         —            否
+    wFont               字体大小          CGFloat                     —                    14            否
+    marginLeft          外左边距          CGFloat                     _                    5             否
+    marginRight         外右边距          CGFloat                     _                    0             否
+    marginTop           外上边距          CGFloat                     _                   10             否
+    marginBottom        外下边距          CGFloat                     _                   10             否
+    paddingLeft         内左边距          CGFloat                     _                   10             否
+    paddingTop          内上边距          CGFloat                     _                   10             否
+    btnLeft             按钮上边距        CGFloat                      _                   20            否
+    btnTop              按钮上边距        CGFloat                      _                   20            否
+    btnPaddingLeft      图文间距          CGFloat                     _                    5             否
+    textImageName       文本图片          NSString                    _                    _             否
+    imageName           纯图片            NSString                    _                    _             否
+    selecTextImageName  选中的纯图片       NSString                    _                    _             否
+    selectImageName     选中的文本图片     NSString                     _                    _            否
+    imagePosition       图文位置         TagImagePosition     top/left/bottom/right       right          否
+    wInsertPlaceholder  插入标签提示语     NSString                     _                  +New tag       否
+
+### 依赖
+Masonry
+
+安装
+==============
+
+### CocoaPods
+1. 将 cocoapods 更新至最新版本.
+2. 在 Podfile 中添加 `pod 'WMZTags'`。
+3. 执行 `pod install` 或 `pod update`。
+4. 导入 #import "WMZTags.h"。
+
+### 注:要消除链式编程的警告 
+要在Buildding Settings 把CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF 设为NO
+
+### 手动安装
+
+1. 下载 WMZTags 文件夹内的所有内容。
+2. 将 WMZTags 内的源文件添加(拖放)到你的工程。
+3. 导入 #import "WMZTags.h"
+
+系统要求
+==============
+该库最低支持 `iOS 9.0` 和 `Xcode 9.0`。
 
 
-# 20190731
-加了对齐方式  
-wTagAlign属性  枚举TagAlignLeft/TagAlignRight 分别为左对齐和右对齐 默认左对齐
-![D6D8414E-093F-4B15-AD77-083013A7B260.png](https://upload-images.jianshu.io/upload_images/9163368-c6b55ee93a3a75b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-wSelectIndexData属性   默认选中数据 传wData数据中的想默认选中的位于数组中的下标
-如 .wSelectIndexDataSet(@[@(1),@(3),@(5)]) 即第2 第4 第6默认选中 下标从0开始
+许可证
+==============
+LEETheme 使用 MIT 许可证，详情见 [LICENSE](LICENSE) 文件。
+
+
+个人主页
+==============
+使用过程中如果有什么bug欢迎给我提issue 我看到就会解决,如果对你有用的话给个star
+[我的简书](https://www.jianshu.com/p/1b70159cdbd7)
+[WMZTags](https://github.com/wwmz/WMZTags)
+
+
