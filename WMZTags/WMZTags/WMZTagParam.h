@@ -84,7 +84,6 @@ typedef enum :NSInteger{
 
 /* =========================================Attributes==========================================
  参数                 说明              类型                      可选值                默认值        是否必传
- wParentView         父视图            UIView                      —                   -            是
  wFrame              frame布局        CGRect                       —                   -            是（和maronsy二选一）
  wMasonry            masonry布局      TagConstraint                —                   -            是（和wFrame二选一）
  wData               数据源            NSArray                     —                    -           是

@@ -158,8 +158,7 @@
     self.backgroundColor = self.param.wInnerColor;
     [self setTitleColor:self.param.wColor forState:UIControlStateNormal];
     self.titleLabel.font = [UIFont systemFontOfSize:self.param.wFont];
-    self.layer.shouldRasterize = YES;
-    
+
     if (self.param.wHit) {
         self.layer.borderWidth = self.param.wBoderWidth;
         self.layer.borderColor = self.param.wBoderColor.CGColor;
