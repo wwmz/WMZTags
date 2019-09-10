@@ -45,6 +45,7 @@
     self.btnArr = [NSMutableArray new];
     if (self.param.wMasonry) {
         [self.superview layoutIfNeeded];
+        
     }
     [self createUI];
     if (self.param.wBackGroundColor) self.backgroundColor = self.param.wBackGroundColor;
@@ -147,15 +148,6 @@
         btn.maxSize = CGSizeMake(btnWidth, btn.maxSize.height);
     }
     CGFloat btnHeight = btn.maxSize.height + self.param.btnTop;
-    if (!self.param.wLineaBle) {
-        btnHeight = btn.oneLineHeight + self.param.btnTop;
-    }else{
-        if (self.param.wLineNum!=0) {
-            if (btn.lineCount>1) {
-                 btnHeight = btn.oneLineHeight * self.param.wLineNum + self.param.btnTop;
-            }
-        }
-    }
     if (add) {
         [btn setUI];
     }
@@ -228,7 +220,6 @@
         [self.btnArr addObject:btn];
     }
     
-
     if (self.param.selectBtnArr&&self.param.selectBtnArr.count) {
         if ([self.param.selectBtnArr indexOfObject:@(btn.tag)]!=NSNotFound) {
             btn.selected = YES;
@@ -277,7 +268,6 @@
         [arr removeObject:sender.titleLabel.text];
         [self.btnArr removeObject:sender];
         [sender removeFromSuperview];
-        NSLog(@"删除后%@",self.btnArr);
         self.param.wData = [NSArray arrayWithArray:arr];
         [self createUI];
         if (self.param.closeClick) {
@@ -313,7 +303,7 @@
             self.param.selectBtnArr = nil;
             for (WMZTagBtn *btn in self.btnArr) {
                 if (btn.selected == YES) {
-                    [indexArr addObject:@(btn.tag)];
+                    [indexArr addObject:@(btn.tag-100)];
                     [modelArr addObject:btn.titleLabel.text];
                     [self.param.selectBtnArr addObject:@(btn.tag)];
                 }

@@ -25,7 +25,7 @@
             }
         })
         .wMasonrySet(^(MASConstraintMaker * _Nonnull make) {
-            make.edges.mas_equalTo(0);
+            make.top.left.bottom.mas_equalTo(0);
             make.width.mas_equalTo(TagWitdh);
         })
         .wInsertClick(^(NSInteger index, id  _Nonnull model, InsertTextBlock  _Nonnull block) {

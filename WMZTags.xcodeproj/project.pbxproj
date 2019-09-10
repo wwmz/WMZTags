@@ -93,7 +93,6 @@
 		F32090F0231E314900460E25 /* WMZTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTags.m; sourceTree = "<group>"; };
 		F32090F1231E314900460E25 /* WMZTagParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZTagParam.h; sourceTree = "<group>"; };
 		F32090F2231E314900460E25 /* WMZTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMZTagCell.m; sourceTree = "<group>"; };
-		F320911D231E3C4800460E25 /* HeaderFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFiles.h; sourceTree = "<group>"; };
 		F320911E231E418B00460E25 /* WMZTagsTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTagsTool.h; sourceTree = "<group>"; };
 		F320911F231E418B00460E25 /* WMZTagsTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMZTagsTool.m; sourceTree = "<group>"; };
 		F3209122231E4F6700460E25 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -123,6 +122,7 @@
 		F320913A231E4F6700460E25 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		F3437C062313D17E002EBA95 /* tagZeroCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagZeroCell.h; sourceTree = "<group>"; };
 		F3437C072313D17E002EBA95 /* tagZeroCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagZeroCell.m; sourceTree = "<group>"; };
+		F389322023273DDB003384AD /* WMZTagConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMZTagConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,7 +233,7 @@
 				F32090F0231E314900460E25 /* WMZTags.m */,
 				F320911E231E418B00460E25 /* WMZTagsTool.h */,
 				F320911F231E418B00460E25 /* WMZTagsTool.m */,
-				F320911D231E3C4800460E25 /* HeaderFiles.h */,
+				F389322023273DDB003384AD /* WMZTagConfig.h */,
 			);
 			path = WMZTags;
 			sourceTree = "<group>";

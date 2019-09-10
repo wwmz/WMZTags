@@ -11,6 +11,7 @@
 //
 
 #import "tagOneCell.h"
+
 @implementation tagOneCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -37,7 +38,9 @@
 
 - (void)setModel:(NSArray *)model{
     [super setModel:model];
-    self.param.wDataSet(model);
+    self.param.wDataSet(model)
+    //默认选中第三个 从0开始
+    .wSelectIndexDataSet(@[@(2)]);
     [self.myTag updateUI];
     
 }

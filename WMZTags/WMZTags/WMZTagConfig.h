@@ -1,14 +1,13 @@
 //
-//  HeaderFiles.h
+//  WMZTagConfig.h
 //  WMZTags
 //
-//  Created by wmz on 2019/9/3.
+//  Created by wmz on 2019/9/10.
 //  Copyright © 2019 wmz. All rights reserved.
 //
 
-#ifndef HeaderFiles_h
-#define HeaderFiles_h
-
+#ifndef WMZTagConfig_h
+#define WMZTagConfig_h
 
 #import <UIKit/UIKit.h>
 #import "Masonry.h"
@@ -39,5 +38,4 @@ return self;                                                                    
 };                                                                                                                      \
 }
 
-
-#endif /* HeaderFiles_h */
+#endif /* WMZTagConfig_h */

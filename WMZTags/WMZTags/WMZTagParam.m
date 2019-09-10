@@ -19,8 +19,6 @@ WMZPropSetFuncImplementation(WMZTagParam, Boolean,          wSelectOne)
 WMZPropSetFuncImplementation(WMZTagParam, Boolean,          wSelectMore)
 WMZPropSetFuncImplementation(WMZTagParam, TagAlign,         wTagAlign)
 WMZPropSetFuncImplementation(WMZTagParam, Boolean ,         wHit)
-WMZPropSetFuncImplementation(WMZTagParam, Boolean,          wLineaBle)
-WMZPropSetFuncImplementation(WMZTagParam, NSInteger,        wLineNum)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat,          wRadius)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat,          wBoderWidth)
 WMZPropSetFuncImplementation(WMZTagParam, UIColor*,         wBoderColor)
@@ -67,7 +65,7 @@ WMZPropSetFuncImplementation(WMZTagParam, NSString*,        selectImageName)
         _wInnerColor = MInnerColor;
         _imagePosition = TagImagePositionRight;
         _wBoderColor = MBoderColor;
-        _wBackGroundColor = [WMZTagsTool stringTOColor:@"#666666"];
+        _wBackGroundColor = [WMZTagsTool stringTOColor:@"#eeeeee"];
         _wBoderWidth = 1;
         _wRadius = 5;
         _wInsertPlaceholder = MInsertPlaceholder;

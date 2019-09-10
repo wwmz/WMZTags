@@ -27,9 +27,8 @@
             make.top.left.bottom.mas_equalTo(0);
             make.width.mas_equalTo(TagWitdh);
         })
-        .wLineaBleSet(YES)
-        .wLineNumSet(3)
-        .wClosableSet(YES).wTypeSet(warning);
+        .wClosableSet(YES)
+        .wTypeSet(warning);
         self.myTag = [[WMZTags alloc]initConfigureWithModel:self.param withView:self.contentView];
         
     }

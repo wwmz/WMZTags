@@ -95,8 +95,6 @@ typedef enum :NSInteger{
  wSelectOne          是否可单选        Boolean                     —                  false          否
  wSelectMore         是否可多选        Boolean                     —                  false          否
  wTagAlign           标签对齐模式       TagAlign       TagAlignLeft/TagAlignRight   TagAlignLeft     否
- wLineaBle           是否换行          Boolean                     —                  false          否
- wLineNum            换行最大行数       Boolean                    _                    0            否
  wHit                是否有边框描边     Boolean                     —                  false          否
  wRadius             圆角             CGFloat                     —              5(最大为高度的一半)   否
  wBoderWidth         边框宽度          CGFloat                     _                    1            否
@@ -132,7 +130,6 @@ WMZPropStatementAndPropSetFuncStatement(copy,   WMZTagParam, NSString*,         
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wSelectOne)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wSelectMore)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wHit)
-WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, Boolean,           wLineaBle)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, TagAlign,          wTagAlign)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           wBoderWidth)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           wRadius)
@@ -146,7 +143,6 @@ WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wSelectColor)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wBackGroundColor)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           wFont)
-WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, NSInteger,         wLineNum)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, TagSizeType,       wSize)
 WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGRect,            wFrame)
 WMZPropStatementAndPropSetFuncStatement(copy,   WMZTagParam, TagConstraint,     wMasonry)

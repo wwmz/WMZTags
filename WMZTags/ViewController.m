@@ -54,8 +54,6 @@
     .wInsertaBleSet(YES)
     .wSelectOneSet(YES)
     .wClosableSet(YES)
-    .wLineaBleSet(YES)
-    .wLineNumSet(0)
     .wTypeSet(danger)
     .wSizeSet(small)
     .imagePositionSet(TagImagePositionLeft)

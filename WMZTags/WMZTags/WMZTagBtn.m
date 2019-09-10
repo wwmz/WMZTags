@@ -93,9 +93,6 @@
 - (void)setUI{
     [self setTitle:self.text forState:UIControlStateNormal];
     
-    if (self.param.wLineaBle) {
-        self.titleLabel.numberOfLines = self.param.wLineNum;
-    }
     
     //定制主题
     NSDictionary *typeDic= @{
@@ -161,7 +158,7 @@
     self.backgroundColor = self.param.wInnerColor;
     [self setTitleColor:self.param.wColor forState:UIControlStateNormal];
     self.titleLabel.font = [UIFont systemFontOfSize:self.param.wFont];
-    
+    self.layer.shouldRasterize = YES;
     
     if (self.param.wHit) {
         self.layer.borderWidth = self.param.wBoderWidth;

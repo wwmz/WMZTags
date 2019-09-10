@@ -6,7 +6,7 @@
 //  Copyright © 2019 wmz. All rights reserved.
 //
 
-#import "HeaderFiles.h"
+#import "WMZTagConfig.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WMZTagsTool : NSObject
