@@ -295,6 +295,10 @@
     }
     //多点
     if (self.param.wSelectMore) {
+        if (self.param.wSelectMoreMaxCount!=-1) {
+            if (self.param.selectBtnArr.count>=self.param.wSelectMoreMaxCount&&[self.param.selectBtnArr indexOfObject: @(sender.tag)]==NSNotFound)
+                return;
+        }
         sender.selected = !sender.selected;
         if (self.param.tagMoreClick) {
             [self dealDefaultSelect:sender];

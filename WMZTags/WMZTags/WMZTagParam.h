@@ -135,6 +135,7 @@ WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, CGFloat,           
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wBoderColor)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, NSArray*,          wData)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, NSArray*,          wSelectIndexData)
+WMZPropStatementAndPropSetFuncStatement(assign, WMZTagParam, NSInteger,         wSelectMoreMaxCount)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wInnerColor)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wColor)
 WMZPropStatementAndPropSetFuncStatement(strong, WMZTagParam, UIColor*,          wSelectBoderColor)

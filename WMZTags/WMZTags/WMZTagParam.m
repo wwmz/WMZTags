@@ -37,6 +37,7 @@ WMZPropSetFuncImplementation(WMZTagParam, TagConstraint,    wMasonry)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat,          marginLeft)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat,          marginRight)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat,          marginTop)
+WMZPropSetFuncImplementation(WMZTagParam, NSInteger,        wSelectMoreMaxCount)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat,          marginBottom)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat,          paddingLeft)
 WMZPropSetFuncImplementation(WMZTagParam, CGFloat,          paddingTop)
@@ -72,6 +73,7 @@ WMZPropSetFuncImplementation(WMZTagParam, NSString*,        selectImageName)
         _wSelectBoderColor = MSelectBoderColor;
         _wSelectColor = MSelectColor;
         _wSelectInnerColor = MSelectInnerColor;
+        _wSelectMoreMaxCount = -1;
     }
     return self;
 }
